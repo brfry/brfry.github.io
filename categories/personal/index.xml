@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personal on Water Rules</title>
+    <link>https://brfry.github.io/categories/personal/</link>
+    <description>Recent content in Personal on Water Rules</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>beck@frecologic.com (Beck Frydenborg)</managingEditor>
+    <webMaster>beck@frecologic.com (Beck Frydenborg)</webMaster>
+    <lastBuildDate>Tue, 16 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://brfry.github.io/categories/personal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2017 Year in Review</title>
+      <link>https://brfry.github.io/post/2017-year-in-review/</link>
+      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>https://brfry.github.io/post/2017-year-in-review/</guid>
+      <description>Happy 2018! I’ve rebuilt the website with the Beautiful-Hugo theme.
+It’s a new year, and one of my goals is to actually blog more consistently. With that in mind, here is a “better late than never” (but still later than it should be) post in which I look back and reflect on the past year.
+Borrowing a format I saw on The Lab and Field Blog, here is my 2017 by the numbers:</description>
+    </item>
+    
+  </channel>
+</rss>

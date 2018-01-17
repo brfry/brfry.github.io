@@ -1,0 +1,26 @@
+---
+title: "I Finally Built a Blog"
+draft: no
+date: '2017-03-08'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+I finally did it. I actually made a blog. The focus of this blog will be things I am familiar with and passionate about:
+
+
+  * The intersection of science and policy as it relates to water. 
+  * Exploration of the science and evidence behind controversial topics
+  * Cycling
+
+I'll likely deviate from this theme on occassion, but will try to keep the focus there.
+
+That being said, here is some test R code so I make sure things are working alright:
+
+
+```{r, echo=FALSE}
+plot(cars)
+```
+

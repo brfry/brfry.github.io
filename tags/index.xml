@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Water Rules</title>
+    <link>https://brfry.github.io/tags/</link>
+    <description>Recent content in Tags on Water Rules</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>beck@frecologic.com (Beck Frydenborg)</managingEditor>
+    <webMaster>beck@frecologic.com (Beck Frydenborg)</webMaster>
+    <lastBuildDate>Tue, 16 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://brfry.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cycling</title>
+      <link>https://brfry.github.io/tags/cycling/</link>
+      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>https://brfry.github.io/tags/cycling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ecology</title>
+      <link>https://brfry.github.io/tags/ecology/</link>
+      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>https://brfry.github.io/tags/ecology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Human Health</title>
+      <link>https://brfry.github.io/tags/human-health/</link>
+      <pubDate>Wed, 22 Mar 2017 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>https://brfry.github.io/tags/human-health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Personal</title>
+      <link>https://brfry.github.io/tags/personal/</link>
+      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>https://brfry.github.io/tags/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Policy</title>
+      <link>https://brfry.github.io/tags/policy/</link>
+      <pubDate>Wed, 22 Mar 2017 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>https://brfry.github.io/tags/policy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualization</title>
+      <link>https://brfry.github.io/tags/visualization/</link>
+      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>https://brfry.github.io/tags/visualization/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Water Rules</title>
+    <link>https://brfry.github.io/</link>
+    <description>Recent content on Water Rules</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>beck@frecologic.com (Beck Frydenborg)</managingEditor>
+    <webMaster>beck@frecologic.com (Beck Frydenborg)</webMaster>
+    <lastBuildDate>Tue, 16 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://brfry.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2017 Year in Review</title>
+      <link>https://brfry.github.io/post/2017-year-in-review/</link>
+      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>https://brfry.github.io/post/2017-year-in-review/</guid>
+      <description>Happy 2018! I’ve rebuilt the website with the Beautiful-Hugo theme.
+It’s a new year, and one of my goals is to actually blog more consistently. With that in mind, here is a “better late than never” (but still later than it should be) post in which I look back and reflect on the past year.
+Borrowing a format I saw on The Lab and Field Blog, here is my 2017 by the numbers:</description>
+    </item>
+    
+    <item>
+      <title>Human Health Criteria Part Two</title>
+      <link>https://brfry.github.io/post/2017-03-15-human-health-criteria-part-two/</link>
+      <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>https://brfry.github.io/post/2017-03-15-human-health-criteria-part-two/</guid>
+      <description>Well, this blog entry has certainly been delayed more than I anticipated. This post will hopefully give you an introductory background into the motivations behind determining a regulatory number, the methods available to set that number, what the major assumptions are, and what the differences are between the methods.
+1. What are the goals of human health criteria regulations?Human Health Criteria (HHC) water quality standards are set to ensure that a designated population can safely consume seafood, and swim and drink potable water.</description>
+    </item>
+    
+    <item>
+      <title>Human Health Criteria Part One</title>
+      <link>https://brfry.github.io/post/human-health-criteria-part1/</link>
+      <pubDate>Wed, 22 Mar 2017 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>https://brfry.github.io/post/human-health-criteria-part1/</guid>
+      <description>Recently in Florida, there has been some controversy over an update to Human Health Criteria (HHC) that the Florida Department of Environmental Protection (FDEP) promulgated concerning acceptable levels for 88 carcinogens in ambient water and seafood. Most notably, many environmental activists are concerned that historic numbers for several substances are proposed to increase. Many blame FDEP’s use of a probabilistic model instead of the previously used deterministic model, and this theme was repeated in the press:</description>
+    </item>
+    
+    <item>
+      <title>Human Health Criteria Part One</title>
+      <link>https://brfry.github.io/post/human-health-criteria-part1/</link>
+      <pubDate>Wed, 22 Mar 2017 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>https://brfry.github.io/post/human-health-criteria-part1/</guid>
+      <description>Recently in Florida, there has been some controversy over an update to Human Health Criteria (HHC) that the Florida Department of Environmental Protection (FDEP) promulgated concerning acceptable levels for 88 carcinogens in ambient water and seafood. Most notably, many environmental activists are concerned that historic numbers for several substances are proposed to increase. Many blame FDEP’s use of a probabilistic model instead of the previously used deterministic model, and this theme was repeated in the press:</description>
+    </item>
+    
+    <item>
+      <title>I Finally Built a Blog</title>
+      <link>https://brfry.github.io/post/2017-03-08-hello-world-rmd/</link>
+      <pubDate>Wed, 08 Mar 2017 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>https://brfry.github.io/post/2017-03-08-hello-world-rmd/</guid>
+      <description>I finally did it. I actually made a blog. The focus of this blog will be things I am familiar with and passionate about:
+The intersection of science and policy as it relates to water.Exploration of the science and evidence behind controversial topicsCyclingI’ll likely deviate from this theme on occassion, but will try to keep the focus there.
+That being said, here is some test R code so I make sure things are working alright:</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>https://brfry.github.io/page/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>https://brfry.github.io/page/about/</guid>
+      <description>&amp;ldquo;We pass through this world but once.&amp;rdquo;
+~ Stephen Jay Gould
+ I’m an environmental consultant specializing in water science and policy in Florida.
+My main interests are in using data analysis and visualizations to help clients in the private, public, and nonprofit sectors fulfil their missions and goals while protecting water quality and human health.
+In my spare time I enjoy cycling, hiking, and photography.
+Resume and CV A complete CV can be viewed here.</description>
+    </item>
+    
+    <item>
+      <title>Presentation Slides</title>
+      <link>https://brfry.github.io/page/presentations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>https://brfry.github.io/page/presentations/</guid>
+      <description>2018 Coming soon 2017 Assessing Coastal Dune Lake Health Fri, Oct 20, 2017, Mattie M. Kelly Environmental Institute Symposium 2017, Niceville, FL
+A Meta-analysis of Agriculture Best Management Practices - 2017 Society for Freshwater Science Thu, Apr 27, 2017, Society for Freshwater Science Annual Meeting, Raleigh, NC</description>
+    </item>
+    
+    <item>
+      <title>Shiny Apps</title>
+      <link>https://brfry.github.io/page/shiny_apps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>https://brfry.github.io/page/shiny_apps/</guid>
+      <description>Links to Shiny Apps here along with brief descriptions and a picture
+edit the shiny_apps.md file under content/page</description>
+    </item>
+    
+  </channel>
+</rss>
