@@ -38,7 +38,7 @@ Borrowing a format I saw on [The Lab and Field Blog](https://labandfield.wordpre
 
 * **15 projects** - Growing business means many different irons in the fire. Learning to juggle this many projects at once has been a challenge but clients have been happy with the final work products, so I must be doing something right.
 
-* 2 - **conferences attended** - I only presented at two conferences this year, but I found both of the conferences to be excellent. It was my first time attending the Society for Freshwater Science (SFS), where I met several new people and reconnected with others I hadn't seen for years. My talk about a meta-analysis my company did for Best Management Practices for Agriculture in Florida was well received too. The second conference (MKEI) was much smaller (~50 people total), where I presented findings concerning the effectiveness of BMPs for protecting a series of rare coastal dune lakes located in the Florida panhandle.
+* 2  **conferences attended** - I only presented at two conferences this year, but I found both of the conferences to be excellent. It was my first time attending the Society for Freshwater Science (SFS), where I met several new people and reconnected with others I hadn't seen for years. My talk about a meta-analysis my company did for Best Management Practices for Agriculture in Florida was well received too. The second conference (MKEI) was much smaller (~50 people total), where I presented findings concerning the effectiveness of BMPs for protecting a series of rare coastal dune lakes located in the Florida panhandle.
 
 * **7 states visited** - I traveled for work and for pleasure this year. This brought me to North Caroline, South Carolina, Georgia, Tennessee, California, Nevada, and Massachusetts.
 
@@ -119,8 +119,6 @@ rides_df2 <- rides_df %>%
         group_by(date) %>%
         select(distance_miles, Time_hrs, date) %>%
         summarise_all(funs(sum(.,na.rm=TRUE))) %>%
-      #  mutate(daily_distance_goal = 20) %>%
-     #   mutate(daily_time_goal = 1) %>%
         mutate(month = lubridate::month(date, label = TRUE)) %>%
         mutate(day_of_year = lubridate::yday(date)) %>%
         mutate(day_name = lubridate::wday(date, label = TRUE))
@@ -160,7 +158,7 @@ plot1 <- rides_df %>%
 plot1
 ```
 
-I did not do any 40+ hour rides. These outliers are due to me pausing a ride, leaving the bike overnight, and then riding the next day or several days later. This resulted in a single ride on one file with a very long elapsed time (which is different than riding time, but my Google spreadsheet did not report that apparently). These are recorded as all taking place on the day of the first ride. The elapsed time is misleading, as it is not *riding* time.
+I did not do any 40+ hour rides. These outliers are due to me pausing a ride, leaving the bike overnight, and then riding the next day or several days later. This resulted in a single ride on one file with a very long elapsed time (which is different than riding time, but my Google spreadsheet did not report that apparently). The elapsed time is therefore misleading, as it is not *riding* time.
 
 ***
 
@@ -249,7 +247,6 @@ rides_df2$day_name <- factor(rides_df2$day_name, levels =
         
 rides_4k <- rides_df2 %>%
         filter(day_of_year >=165) %>%
-        filter(!is.na(day_name)) %>%
         ggplot(aes(x = day_of_year, y = cumsum(distance_miles))) +
         # geom_bar(stat = "identity") +
         geom_point(aes(color = day_name)) +
@@ -275,3 +272,4 @@ ggarrange(rides_scatter, rides_4k, rides_day_dst,
           ncol = 1, nrow = 3)
 ```
 
+My longer rides tend to be on Sunday, while most of my rides during the weekday are 11 miles. For the portion of the year examined, I exceeded my 4000 mile goal (however, injury during the first part of the year meant I actually did not achieve 4000 miles). The bottom graph lets me examine my monthly distance, and which days were responsible for the distance. I travelled a lot in September, and started riding more on Sunday in December.
