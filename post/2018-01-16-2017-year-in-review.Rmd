@@ -272,4 +272,5 @@ ggarrange(rides_scatter, rides_4k, rides_day_dst,
           ncol = 1, nrow = 3)
 ```
 
+
 My longer rides tend to be on Sunday, while most of my rides during the weekday are 11 miles. For the portion of the year examined, I exceeded my 4000 mile goal (however, injury during the first part of the year meant I actually did not achieve 4000 miles). The bottom graph lets me examine my monthly distance, and which days were responsible for the distance. I travelled a lot in September, and started riding more on Sunday in December.
