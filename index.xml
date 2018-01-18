@@ -54,7 +54,7 @@ That being said, here is some test R code so I make sure things are working alri
     </item>
     
     <item>
-      <title>About me</title>
+      <title>About</title>
       <link>/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>beck@frecologic.com (Beck Frydenborg)</author>
@@ -62,9 +62,8 @@ That being said, here is some test R code so I make sure things are working alri
       <description>&amp;ldquo;We pass through this world but once.&amp;rdquo;
 ~ Stephen Jay Gould
  I’m an environmental consultant specializing in water science and policy in Florida.
-My main interests are in using data analysis and visualizations to help clients in the private, public, and nonprofit sectors fulfil their missions and goals while protecting water quality and human health.
-In my spare time I enjoy cycling, hiking, and photography.
-Resume and CV A complete CV can be viewed here.</description>
+My main interests are in using data analysis and visualizations to help clients in the private, public, and nonprofit sectors fulfil their missions and goals while protecting water quality and human health. I&amp;rsquo;ll write about some of that work here.
+In my spare time I enjoy cycling, hiking, and photography.</description>
     </item>
     
     <item>
