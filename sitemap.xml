@@ -32,19 +32,13 @@
   </url>
   
   <url>
-    <loc>/tags/cycling/</loc>
-    <lastmod>2018-01-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/categories/cycling/</loc>
     <lastmod>2018-01-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/ecology/</loc>
+    <loc>/tags/cycling/</loc>
     <lastmod>2018-01-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -56,8 +50,8 @@
   </url>
   
   <url>
-    <loc>/tags/human-health/</loc>
-    <lastmod>2017-03-10T00:00:00+00:00</lastmod>
+    <loc>/tags/ecology/</loc>
+    <lastmod>2018-01-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -68,13 +62,13 @@
   </url>
   
   <url>
-    <loc>/page/</loc>
+    <loc>/tags/human-health/</loc>
+    <lastmod>2017-03-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/personal/</loc>
-    <lastmod>2018-01-16T00:00:00+00:00</lastmod>
+    <loc>/page/</loc>
     <priority>0</priority>
   </url>
   
@@ -85,13 +79,19 @@
   </url>
   
   <url>
-    <loc>/tags/policy/</loc>
-    <lastmod>2017-03-10T00:00:00+00:00</lastmod>
+    <loc>/tags/personal/</loc>
+    <lastmod>2018-01-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/policy/</loc>
+    <lastmod>2017-03-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/policy/</loc>
     <lastmod>2017-03-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -123,13 +123,13 @@
   </url>
   
   <url>
-    <loc>/tags/visualization/</loc>
+    <loc>/categories/visualization/</loc>
     <lastmod>2018-01-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/visualization/</loc>
+    <loc>/tags/visualization/</loc>
     <lastmod>2018-01-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
