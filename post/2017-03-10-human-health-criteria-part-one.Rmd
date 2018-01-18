@@ -1,0 +1,42 @@
+---
+title: Human Health Criteria Part One
+author: Beck Frydenborg
+date: '2017-03-10'
+slug: human-health-criteria-part-one
+categories:
+  - human health
+  - policy
+tags:
+  - human health
+  - policy
+---
+
+
+Recently in Florida, there has been some controversy over an update to Human Health Criteria (HHC) that the Florida Department of Environmental Protection (FDEP) promulgated concerning acceptable levels for 88 carcinogens in ambient water and seafood. Most notably, many environmental activists are concerned that historic numbers for several substances are proposed to increase. Many blame FDEP’s use of a probabilistic model instead of the previously used deterministic model, and this theme was repeated in the press:
+
+[“The state of Florida wants to weaken its restrictions on roughly two dozen cancer-causing chemicals that can be discharged into its rivers, lakes, streams and coastal waters”](http://www.tallahassee.com/story/news/2016/05/14/public-blasts-dep-over-new-water-toxin-standards/84382154/)
+
+[“DEP’s method of calculating limits — a process not used by any other state or the Environmental Protection Agency — would allow for more pollution”.](http://www.tallahassee.com/story/news/2016/05/20/dep-defends-water-pollution-standards/84675594/)
+
+In response to these claims by environmentalists FDEP asserts that [“the criteria consider a range of environmental variables and account for the most at-risk populations, including young children, pregnant women and those whose diets comprise primarily of Florida seafood”.](http://www.mypalmbeachpost.com/news/cerabino-dirty-water-shouldn-our-future-environmentalists-say/2om26RwRrwkTkffSR5kPyM/)
+
+There is a lot to unpack here in addition to just the science and statistics behind the criteria. For instance, to someone unfamiliar with the state-federal relationship and rule making process, it sounds worrying that FDEP is promulgating higher acceptable levels for some carcinogens than what the EPA has put forward. Yet these news stories tend to leave out a key point: the EPA [“criteria are not rules, nor do they automatically become part of a state’s water quality standards. States may adopt the criteria that EPA publishes, modify EPA’s criteria to reflect site-specific conditions, or adopt different criteria based on other scientifically-defensible methods.”](https://www.epa.gov/sites/production/files/2015-10/documents/human-health-2015-update-factsheet.pdf)
+
+In addition to scary news articles, one concerned group, Earth Justice, did present an analysis by JoAnn Burkholder of NCSU that is critical of the methodology. She asserts that [“the [Monte Carlo] model has several major impediments which prompted the U.S. Environmental Protection Agency (EPA) to advise against its use for deriving HHC”](http://earthjustice.org/sites/default/files/files/Burkholder%20Assessment.pdf) and that “the model emphasizes average adult Floridians”.
+
+While I do not want this blog post to be a review of her paper, I will note that a cursory look at the literature she sites does not appear to support her claims. For instance, one citation is for a 1994 EPA Region 3 (Florida is in Region 4) guidance document which never discourages the use of Monte Carlo simulation. In fact it mainly discusses how single point and deterministic methods do not account for uncertainty properly and are overly protective. EPA has a more recent (2014), peer reviewed document outlining risk assessment in more detail, which notes [“PRA (probabilistic risk assessment) may be more suitable than DRA (deterministic risk assessment) for complex assessments, including those of aggregate and cumulative exposures and time-dependent individual exposure, dose and effects analyses”.](https://nepis.epa.gov/Exe/ZyNET.exe/P100JW7J.TXT?ZyActionD=ZyDocument&Client=EPA&Index=2011+Thru+2015&Docs=&Query=&Time=&EndTime=&SearchMethod=1&TocRestrict=n&Toc=&TocEntry=&QField=&QFieldYear=&QFieldMonth=&QFieldDay=&IntQFieldOp=0&ExtQFieldOp=0&XmlQuery=&File=D%3A%5Czyfiles%5CIndex%20Data%5C11thru15%5CTxt%5C00000011%5CP100JW7J.txt&User=ANONYMOUS&Password=anonymous&SortMethod=h%7C-&MaximumDocuments=1&FuzzyDegree=0&ImageQuality=r75g8/r75g8/x150y150g16/i425&Display=hpfr&DefSeekPage=x&SearchBack=ZyActionL&Back=ZyActionS&BackDesc=Results%20page&MaximumPages=1&ZyEntry=1&SeekPage=x&ZyPURL)
+
+As you can tell, I think the environmentalists and Burkholder are wrong about the science (and policy) behind these new rules.
+
+But why should you take my word for it? Are you going to get cancer because of this revised regulation? What does it mean that the acceptable dose for benzene in ambient Class III waters has increased from 53.0 ug/L to 71.28 ug/L? Are most Floridian’s protected at these levels? Are the most susceptible populations protected?
+
+In the following series of posts about human health criteria, I’ll attempt to briefly (and almost certainly incompletely) examine the following questions:
+
+ 1.   What are the goals of human health criteria regulations?
+ 2.   What are the methods and assumptions used to set standards for human health criteria?
+ 3.   How were criteria traditionally set (aka the deterministic approach) and what are the limitations?
+ 4.   What is a probabilistic approach, and what are the advantages and limitations compared to the deterministic method?
+ 5.   Is a probabilistic model appropriate for human health risk?
+ 6.   What is the difference in the acceptable level of a pollutant given by the two approaches?
+ 7.   How do various assumptions change the standard?
+
