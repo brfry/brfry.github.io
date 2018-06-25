@@ -23,7 +23,7 @@
     <item>
       <title>Ecology</title>
       <link>/categories/ecology/</link>
-      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
       <author>beck@frecologic.com (Beck Frydenborg)</author>
       <guid>/categories/ecology/</guid>
       <description></description>
@@ -59,7 +59,7 @@
     <item>
       <title>R</title>
       <link>/categories/r/</link>
-      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
       <author>beck@frecologic.com (Beck Frydenborg)</author>
       <guid>/categories/r/</guid>
       <description></description>
@@ -68,9 +68,18 @@
     <item>
       <title>Visualization</title>
       <link>/categories/visualization/</link>
-      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
       <author>beck@frecologic.com (Beck Frydenborg)</author>
       <guid>/categories/visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Water Policy</title>
+      <link>/categories/water-policy/</link>
+      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>/categories/water-policy/</guid>
       <description></description>
     </item>
     

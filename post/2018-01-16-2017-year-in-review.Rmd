@@ -28,7 +28,7 @@ Borrowing a format I saw on [The Lab and Field Blog](https://labandfield.wordpre
 
 * **2 new coding skills** - As already stated, I learned how to set up a website using blogdown. At the beginning of last year I also decided to finally try my hand at Shiny, and made my [first app](https://uown.shinyapps.io/test_shiny1/). While I am still not as good as I would like to be, the volunteer app I built did lead to a work contract, which is pretty cool! 
 
-* **4 blog entries** - This is a source of embarrassment. I had high hopes and ambitions for blogging regularly last year which I did not come close to achieving. Let's see if I can get back into it for 2018.
+* **2 blog entries** - This is a source of embarrassment. I had high hopes and ambitions for blogging regularly last year which I did not come close to achieving. Let's see if I can get back into it for 2018.
 
 * **1 new hobby** - I took up photography in 2017 as a creative outlet. I ended up buying an entry level DSLR for myself, and learning the basics of RAWTherapee (an open source LightRoom). I've tried a few styles, and particularly have enjoyed capturing the subtle beauty of nature. The photos used throughout this website are all taken by me unless otherwise noted.
 
@@ -38,7 +38,7 @@ Borrowing a format I saw on [The Lab and Field Blog](https://labandfield.wordpre
 
 * **15 projects** - Growing business means many different irons in the fire. Learning to juggle this many projects at once has been a challenge but clients have been happy with the final work products, so I must be doing something right.
 
-* 2  **conferences attended** - I only presented at two conferences this year, but I found both of the conferences to be excellent. It was my first time attending the Society for Freshwater Science (SFS), where I met several new people and reconnected with others I hadn't seen for years. My talk about a meta-analysis my company did for Best Management Practices for Agriculture in Florida was well received too. The second conference (MKEI) was much smaller (~50 people total), where I presented findings concerning the effectiveness of BMPs for protecting a series of rare coastal dune lakes located in the Florida panhandle.
+* **2 conferences attended** - I only presented at two conferences this year, but I found both of the conferences to be excellent. It was my first time attending the Society for Freshwater Science (SFS), where I met several new people and reconnected with others I hadn't seen for years. My talk about a meta-analysis my company did for Best Management Practices for Agriculture in Florida was well received too. The second conference (MKEI) was much smaller (~50 people total), where I presented findings concerning the effectiveness of BMPs for protecting a series of rare coastal dune lakes located in the Florida panhandle.
 
 * **7 states visited** - I traveled for work and for pleasure this year. This brought me to North Caroline, South Carolina, Georgia, Tennessee, California, Nevada, and Massachusetts.
 
