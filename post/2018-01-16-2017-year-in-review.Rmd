@@ -15,7 +15,7 @@ tags:
   - cycling
   - personal
   - visualization
-bigimg: [{src: "/img/riding_distance_geom_1-16-2018.png", desc: "graphs"}] 
+bigimg: [{src: "/img/riding_distance_geom_1-16-2018.png"}] 
 ---
 
 Happy 2018! I've rebuilt the website with the Beautiful-Hugo theme.

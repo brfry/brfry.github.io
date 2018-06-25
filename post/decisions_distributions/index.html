@@ -184,7 +184,7 @@
   
   
   &nbsp;|&nbsp;
-  <i class="fa fa-clock-o"></i> 6 minutes (1224 words)
+  <i class="fa fa-clock-o"></i> 6 minutes (1209 words)
   
   
 </span>
@@ -218,7 +218,7 @@
   
   
   &nbsp;|&nbsp;
-  <i class="fa fa-clock-o"></i> 6 minutes (1224 words)
+  <i class="fa fa-clock-o"></i> 6 minutes (1209 words)
   
   
 </span>
@@ -238,27 +238,25 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>Sometimes in environmental regulation, we are unable to find a clear cause effect relationship between a known stressor and a known response due to confounders. This is a common problem when attempting to determine acceptable nutrient regimes for some systems. For example, Florida Deperatment of Environmental Protection (FDEP) was required to promulgate Numeric Nutrient Criteria for estuaries as the result of a lawsuit, yet no straightforward cause-effect relationship could be found for Total Nitrogen (TN) and/or Total Phosphorus (TP) leading to excess Chlorophyll a, which in turn lead to submerged aquatic vegetation (SAV) die-off resulting in the loss of this key habitat for these highly productive systems.</p>
+        <p>Sometimes in environmental regulation, we are unable to find a clear cause-effect relationship between a known stressor and a known response due to confounders. This is a common problem when attempting to determine acceptable nutrient regimes for some systems. For example, Florida Department of Environmental Protection (FDEP) was required to promulgate Numeric Nutrient Criteria for estuaries as the result of a lawsuit, yet no straightforward cause-effect relationship could be found for Total Nitrogen (TN) and/or Total Phosphorus (TP) leading to excess Chlorophyll a, which in turn lead to submerged aquatic vegetation (SAV) die-off resulting in the loss of this key habitat for these highly productive systems.</p>
 <p>Due to this difficulty, FDEP used a maintain existing conditions approach, in which long term data sets for estuaries assessed to have acceptable/healthy biology were used to calculate criteria. This approach involved taking the entire distribution of data for a particular estuary and taking the 80th percentile of the data. The estuary would then be deemed impaired if it exceeded the Annual Geometric Mean (AGM) more than once in a three year period (a 10 percent false positive rate).</p>
-<p>I mention this backgroudn because a recent project I was involved in employed this aproach in a slightly modified format, and want to highlight the potential challenges with applying the approach. We studied a series of spatially related lakes which we found to have different levels of human disturbance, and different levels of associated biological health. However, stakeholders like to have simple water quality goals to summarize the state of the lakes. We thought: no problem FDEP has done this before. We will take the group of lakes deemed healthy for their biology (and have a low human impact score) and determine the 80th percentile of this data distribution. However, it soon became clear that the approach developed for an individual estuary was more challenging when applied to a group of lakes. Namely this is a lesson to always check the underlying distribution of your data sets.</p>
-<p>I think it’s easist to demonstrate with an example.</p>
+<p>I mention this background because a recent project I was involved in employed this approach in a slightly modified format, and want to highlight the potential challenges with applying the approach. We studied a series of spatially related lakes which we found to have different levels of human disturbance, and different levels of associated biological health. However, stakeholders like to have simple water quality goals to summarize the state of the lakes. We thought: no problem FDEP has done this before. We will take the group of lakes deemed healthy for their biology (and have a low human impact score) and determine the 80th percentile of this data distribution. However, it soon became clear that the approach developed for an individual estuary was more challenging when applied to a group of lakes. Namely this is a lesson to always check the underlying distribution of your data sets.</p>
+<p>I think it’s easiest to demonstrate with an example.</p>
 <hr />
 <p>Load packages and set the size of figures.</p>
 <pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## -- Attaching packages ----------------------------------------------------- tidyverse 1.2.1 --</code></pre>
+<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.2.1 --</code></pre>
 <pre><code>## v ggplot2 2.2.1     v purrr   0.2.4
 ## v tibble  1.4.2     v dplyr   0.7.4
 ## v tidyr   0.8.0     v stringr 1.3.0
 ## v readr   1.1.1     v forcats 0.3.0</code></pre>
-<pre><code>## -- Conflicts -------------------------------------------------------- tidyverse_conflicts() --
+<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
-<pre class="r"><code>library(viridis)</code></pre>
-<pre><code>## Loading required package: viridisLite</code></pre>
 <pre class="r"><code># set figure size
 knitr::opts_chunk$set(fig.width=12, fig.height=9, message = FALSE, 
                       warning = FALSE)</code></pre>
-<p>Next let’s make a sample dataset. For this dataset, I have designated five lakes as healthy, and 2 as degraded. Each has an associated result which could be any parameter we were interested in setting a goal/limit for before taking action (e.g. Total Nitrogen).</p>
+<p>Next let’s make a sample data set. For this data set, I have designated five lakes as healthy, and 2 as degraded. Each has an associated result which could be any parameter we were interested in setting a goal/limit for before taking action (e.g. Total Nitrogen).</p>
 <pre class="r"><code># make several different distributions:
 set.seed(1234)
 
@@ -275,10 +273,10 @@ data_df &lt;- data.frame(lake = factor(rep(c(&quot;A&quot;,&quot;B&quot;, &quot;
                               rnorm(200, mean = 5),
                               rnorm(200, mean = 8),
                               rnorm(200, mean = 9)))</code></pre>
-<p>We’ll go ahead and designate a color pallette, base plot template, and an additional data frame of the the healthy lakes.</p>
+<p>We’ll go ahead and designate a color palette, base plot template, and an additional data frame of the the healthy lakes.</p>
 <pre class="r"><code>data_ref_df &lt;- data_df %&gt;% filter(bio == &quot;healthy&quot;)
 
-# set custome colors for lakes. picked out using colorbrewer2.org:
+# set custom colors for lakes. picked out using colorbrewer2.org:
 lake_col &lt;- c(&quot;#01665e&quot;, &quot;#5ab4ac&quot;, &quot;#c7eae5&quot;, &quot;#f5f5f5&quot;, &quot;#f6e8c3&quot;, &quot;#d8b365&quot;,
               &quot;#8c510a&quot;)
 # bio colors:
@@ -288,8 +286,7 @@ bio_col &lt;- c(&quot;#8c510a&quot;, &quot;#01665e&quot;)
 p &lt;- ggplot(data_ref_df, aes(x=result)) + 
         theme_bw() + scale_fill_manual(values = lake_col)</code></pre>
 <p>Let’s graph the two distributions of lake classification (healthy and degraded) and draw a line at the 80th percentile of the healthy lake distribution. This appears to give us close to no false negatives, and an acceptable rate of false positives if we make the criteria a “more than once in a three year period”. Looks great, right?</p>
-<pre class="r"><code>p + geom_density() + # overall distribution
-    geom_vline(data = data_ref_df, 
+<pre class="r"><code>p + geom_vline(data = data_ref_df, 
                xintercept = quantile(data_ref_df$result, 0.8), 
                linetype = &quot;dashed&quot;, size = 1) + # 80th percentile
     geom_density(data = data_df, aes(fill = bio), 
@@ -311,7 +308,6 @@ p +
 <p><img src="/post/decisions_distributions_files/figure-html/unnamed-chunk-6-1.png" width="1152" /></p>
 <p>This becomes clearer when making facets of the data.</p>
 <pre class="r"><code>ggplot(data_df, aes(x=result)) +  theme_bw() +
-      #  geom_density() + # overall distribution
         geom_density(aes(fill=bio), alpha = 0.5) + # distribution of factors
         geom_vline(xintercept = quantile(data_ref_df$result, 0.8), 
                    linetype = &quot;dashed&quot;, size = 1) + # 80th percentile
@@ -335,11 +331,11 @@ ggplot(data_df, aes(x=result)) +  theme_bw() +
         facet_grid(lake~.) + scale_fill_manual(values = bio_col) </code></pre>
 <p><img src="/post/decisions_distributions_files/figure-html/unnamed-chunk-8-1.png" width="1152" /></p>
 <p>So we see our problem: it is not appropriate to promulgate water quality criteria using an overall distribution if the underlying distributions of data sets are not random but are instead a result of other structures of the data.</p>
-<p>There are many approaches for setting water quality goals given what we have learned about the underlying structure of our data. For example, we might decided to give each lake it’s own goal based on the same math. However, how do we generalize a goal to lakes that do not currently meet our goal of a healthy biological community?</p>
+<p>There are many approaches for setting water quality goals given what we have learned about the underlying structure of our data. For example, we might decide to give each lake its own goal based on the same math. However, how do we generalize a goal to lakes that do not currently meet our goal of a healthy biological community?</p>
 <p>Ultimately for our project, we decided to take a two step approach:</p>
 <ol style="list-style-type: decimal">
-<li>Evaluate water quality goals based on entire distribution approach. This means that one or two lakes will not meet goals because of the underlying distributions while still having healthy and well balanced biology.</li>
-<li>If a water quality goal is not being met, evaluate the biology. Is the plant community trending downwards or not similar to our goal lake data set? Is the level of human distrubance increasing as these downward water quality trends are occuring? If so, take remedial actions.</li>
+<li>Evaluate water quality goals based on entire distribution approach. This means that one or two lakes will not meet the goals because of the underlying distributions while still having healthy and well balanced biology.</li>
+<li>If a water quality goal is not being met, evaluate the biology. Is the plant community trending downwards or not similar to our goal lake data set? Is the level of human disturbance increasing as these downward water quality trends are occurring? If so, take remedial actions.</li>
 </ol>
 
       </article>
