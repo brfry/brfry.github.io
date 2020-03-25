@@ -443,7 +443,8 @@ p + scale_y_continuous(breaks = c(1*10^1, 1*10^7, 1*10^8, 2*10^8 ),
   geom_col(aes(fill = Name)) +
   scale_fill_manual(values = cols) + 
   theme_bw() +
-  theme(axis.text.x = element_text(hjust=1, angle=45, colour = text_col)) +
+  theme(axis.text.x = element_text(hjust=1, angle=45),
+        axis.text.y = element_text(colour = text_col)) +
   guides(fill = FALSE) +
   labs(title = &quot;Death Toll of Selected Pandemics&quot;,
        subtitle = &quot;Ordered by least recent to most recent&quot;,
@@ -473,7 +474,8 @@ pandem_df %&gt;%
   scale_y_log10((breaks = c(1*10^1, 1*10^2, 1*10^3, 1*10^4, 1*10^5,
                                 1*10^6, 1*10^7,1*10^8))) +
   theme_bw() +
-  theme(axis.text.x = element_text(hjust=1, angle=45, colour = text_col)) +
+  theme(axis.text.x = element_text(hjust=1, angle=45),
+        axis.text.y = element_text(colour = text_col)) +
   guides(fill = FALSE) +
   labs(title = &quot;Death Toll of Selected Pandemics&quot;,
        subtitle = &quot;Ordered by least recent to most recent&quot;,
@@ -488,7 +490,8 @@ pandem_df %&gt;%
   geom_col(aes(fill = Name)) +
   scale_fill_manual(values = cols) + 
   theme_bw() +
-  theme(axis.text.x = element_text(hjust=1, angle=45, colour = text_col)) +
+  theme(axis.text.x = element_text(hjust=1, angle=45),
+        axis.text.y = element_text(colour = text_col)) +
   guides(fill = FALSE) +
   labs(title = &quot;Death Toll of Selected Pandemics&quot;,
        subtitle = &quot;Ordered by least recent to most recent&quot;,
