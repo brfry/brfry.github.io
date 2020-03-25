@@ -1,16 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Water Rules</title>
+    <title>Posts on </title>
     <link>/post/</link>
-    <description>Recent content in Posts on Water Rules</description>
+    <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>beck@frecologic.com (Beck Frydenborg)</managingEditor>
     <webMaster>beck@frecologic.com (Beck Frydenborg)</webMaster>
-    <lastBuildDate>Fri, 25 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>COVID-19 and other Pandemics</title>
+      <link>/post/covid-19-and-other-pandemics/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>/post/covid-19-and-other-pandemics/</guid>
+      <description>I’ve seen this graphic from this blog going around, and while I agree that it is pretty and visually interesting, I find it mostly ineffective for communicating the magnitudes of pandemics over time. Our eyes and brains have a difficult time comparing the volume of spheres compared to a line on a bar chart. Additionally, the image is three dimensional in perspective, which further obfuscates direct comparisons.
+Pandemics
+So since I’m in quarentine, I decided to make a more basic image that allows one to compare magnitudes better.</description>
+    </item>
     
     <item>
       <title>Decision Making and Distributions</title>

@@ -1,32 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Water Rules</title>
+    <title></title>
     <link>/</link>
-    <description>Recent content on Water Rules</description>
+    <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>beck@frecologic.com (Beck Frydenborg)</managingEditor>
     <webMaster>beck@frecologic.com (Beck Frydenborg)</webMaster>
-    <lastBuildDate>Fri, 25 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>COVID-19 and other Pandemics</title>
+      <link>/blog/covid-19-and-other-pandemics/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>/blog/covid-19-and-other-pandemics/</guid>
+      <description>I’ve seen this graphic from this blog going around, and while I agree that it is pretty and visually interesting, I find it mostly ineffective for communicating the magnitudes of pandemics over time. Our eyes and brains have a difficult time comparing the volume of spheres compared to a line on a bar chart. Additionally, the image is three dimensional in perspective, which further obfuscates direct comparisons.
+Pandemics
+So since I’m in quarentine, I decided to make a more basic image that allows one to compare magnitudes better.</description>
+    </item>
+    
+    <item>
       <title>Decision Making and Distributions</title>
-      <link>/post/decisions_distributions/</link>
+      <link>/blog/decisions_distributions/</link>
       <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
       <author>beck@frecologic.com (Beck Frydenborg)</author>
-      <guid>/post/decisions_distributions/</guid>
+      <guid>/blog/decisions_distributions/</guid>
       <description>Sometimes in environmental regulation, we are unable to find a clear cause-effect relationship between a known stressor and a known response due to confounders. This is a common problem when attempting to determine acceptable nutrient regimes for some systems. For example, Florida Department of Environmental Protection (FDEP) was required to promulgate Numeric Nutrient Criteria for estuaries as the result of a lawsuit, yet no straightforward cause-effect relationship could be found for Total Nitrogen (TN) and/or Total Phosphorus (TP) leading to excess Chlorophyll a, which in turn lead to submerged aquatic vegetation (SAV) die-off resulting in the loss of this key habitat for these highly productive systems.</description>
     </item>
     
     <item>
       <title>2017 Year in Review</title>
-      <link>/post/2017-year-in-review/</link>
+      <link>/blog/2017-year-in-review/</link>
       <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
       <author>beck@frecologic.com (Beck Frydenborg)</author>
-      <guid>/post/2017-year-in-review/</guid>
+      <guid>/blog/2017-year-in-review/</guid>
       <description>Happy 2018! I’ve rebuilt the website with the Beautiful-Hugo theme.
 It’s a new year, and one of my goals is to actually blog more consistently. With that in mind, here is a “better late than never” (but still later than it should be) post in which I look back and reflect on the past year.
 Borrowing a format I saw on The Lab and Field Blog, here is my 2017 by the numbers:</description>
@@ -34,29 +45,29 @@ Borrowing a format I saw on The Lab and Field Blog, here is my 2017 by the numbe
     
     <item>
       <title>Human Health Criteria Part Two</title>
-      <link>/post/2017-03-15-human-health-criteria-part-two/</link>
+      <link>/blog/2017-03-15-human-health-criteria-part-two/</link>
       <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
       <author>beck@frecologic.com (Beck Frydenborg)</author>
-      <guid>/post/2017-03-15-human-health-criteria-part-two/</guid>
+      <guid>/blog/2017-03-15-human-health-criteria-part-two/</guid>
       <description>Well, this blog entry has certainly been delayed more than I anticipated. This post will hopefully give you an introductory background into the motivations behind determining a regulatory number, the methods available to set that number, what the major assumptions are, and what the differences are between the methods.
 1. What are the goals of human health criteria regulations?Human Health Criteria (HHC) water quality standards are set to ensure that a designated population can safely consume seafood, and swim and drink potable water.</description>
     </item>
     
     <item>
       <title>Human Health Criteria Part One</title>
-      <link>/post/human-health-criteria-part-one/</link>
+      <link>/blog/human-health-criteria-part-one/</link>
       <pubDate>Fri, 10 Mar 2017 00:00:00 +0000</pubDate>
       <author>beck@frecologic.com (Beck Frydenborg)</author>
-      <guid>/post/human-health-criteria-part-one/</guid>
+      <guid>/blog/human-health-criteria-part-one/</guid>
       <description>Recently in Florida, there has been some controversy over an update to Human Health Criteria (HHC) that the Florida Department of Environmental Protection (FDEP) promulgated concerning acceptable levels for 88 carcinogens in ambient water and seafood. Most notably, many environmental activists are concerned that historic numbers for several substances are proposed to increase. Many blame FDEP’s use of a probabilistic model instead of the previously used deterministic model, and this theme was repeated in the press:</description>
     </item>
     
     <item>
       <title>I Finally Built a Blog</title>
-      <link>/post/2017-03-08-hello-world-rmd/</link>
+      <link>/blog/2017-03-08-hello-world-rmd/</link>
       <pubDate>Wed, 08 Mar 2017 00:00:00 +0000</pubDate>
       <author>beck@frecologic.com (Beck Frydenborg)</author>
-      <guid>/post/2017-03-08-hello-world-rmd/</guid>
+      <guid>/blog/2017-03-08-hello-world-rmd/</guid>
       <description>I finally did it. I actually made a blog. The focus of this blog will be things I am familiar with and passionate about:
 The intersection of science and policy as it relates to water.Exploration of the science and evidence behind controversial topicsCyclingI’ll likely deviate from this theme on occassion, but will try to keep the focus there.
 That being said, here is some test R code so I make sure things are working alright:</description>
@@ -68,21 +79,95 @@ That being said, here is some test R code so I make sure things are working alri
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>beck@frecologic.com (Beck Frydenborg)</author>
       <guid>/page/about/</guid>
-      <description>&amp;ldquo;We pass through this world but once.&amp;rdquo;
-~ Stephen Jay Gould
- I’m an environmental consultant specializing in water science and policy in Florida.
-My main interests are in using data analysis and visualizations to help clients in the private, public, and nonprofit sectors fulfil their missions and goals while protecting water quality and human health. I&amp;rsquo;ll write about some of that work here.
-In my spare time I enjoy cycling, ultimate frisbee, hiking/backpacking, and photography.</description>
+      <description>I’m an environmental consultant specializing in water science and policy in Florida.
+My main interests are in using data analysis and visualizations to help clients in the private, public, and nonprofit sectors fulfil their missions while protecting water quality and human health. I&amp;rsquo;ll write about some of that work here.
+In my spare time I enjoy ultimate frisbee, cycling, gardening, hiking/backpacking, and being bad at photography and pencil drawing. All photographs on this website are ones I took unless they&amp;rsquo;re good, in which case they are attributed appropriately.</description>
     </item>
     
     <item>
-      <title>Presentation Slides</title>
-      <link>/page/presentations/</link>
+      <title>Art</title>
+      <link>/page/art/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>beck@frecologic.com (Beck Frydenborg)</author>
-      <guid>/page/presentations/</guid>
-      <description>2018 Coming soon 2017 Assessing Coastal Dune Lake Health Fri, Oct 20, 2017, Mattie M. Kelly Environmental Institute Symposium 2017, Niceville, FL
-A Meta-analysis of Agriculture Best Management Practices - 2017 Society for Freshwater Science Thu, Apr 27, 2017, Society for Freshwater Science Annual Meeting, Raleigh, NC</description>
+      <guid>/page/art/</guid>
+      <description>Photography  Digital  Drawing  </description>
+    </item>
+    
+    <item>
+      <title>Art</title>
+      <link>/page/arts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>/page/arts/</guid>
+      <description>&lt;h2 id=&#34;photography&#34;&gt;Photography&lt;/h2&gt;
+&lt;hr&gt;
+
+
+&lt;div class=&#34;gallery caption-position-bottom caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
+	  
+  
+&lt;link rel=&#34;stylesheet&#34; href=&#34;/css/hugo-easy-gallery.css&#34; /&gt;
+&lt;div class=&#34;box&#34; &gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;/img/leafs-thumb.jpg&#39;);&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;/img/leafs-thumb.jpg&#34; /&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;/img/leafs.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+  
+
+&lt;div class=&#34;box&#34; &gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;/img/floating_leafs.jpg&#39;);&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;/img/floating_leafs.jpg&#34; alt=&#34;Surface Tension - Beck Frydenborg&#34;/&gt;
+    &lt;/div&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Surface Tension - Beck Frydenborg&lt;/p&gt;
+      &lt;/figcaption&gt;
+    &lt;a href=&#34;/img/floating_leafs.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+  
+
+&lt;div class=&#34;box&#34; &gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;/img/alcatraz.jpg&#39;);&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;/img/alcatraz.jpg&#34; alt=&#34;Alcatraz baracks in black and white - Beck Frydenborg&#34;/&gt;
+    &lt;/div&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Alcatraz baracks in black and white - Beck Frydenborg&lt;/p&gt;
+      &lt;/figcaption&gt;
+    &lt;a href=&#34;/img/alcatraz.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+  
+
+&lt;div class=&#34;box&#34; &gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;/img/self_portrait_bw.jpg&#39;);&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;/img/self_portrait_bw.jpg&#34; alt=&#34;Self Portrait - Beck Frydenborg&#34;/&gt;
+    &lt;/div&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Self Portrait - Beck Frydenborg&lt;/p&gt;
+      &lt;/figcaption&gt;
+    &lt;a href=&#34;/img/self_portrait_bw.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>/page/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>/page/projects/</guid>
+      <description>Antibiotic Resistance and Water Quality Dashboard 
+I developed a Shiny site for the Lipp Lab at the University of Georgia.
+This site allows the user to examine water quality data collected by Upper Oconee Watershed Network volunteers alongside the antibiotic resistance research conducted by the Lipp Lab under a grant from the CDC.
+ </description>
     </item>
     
     <item>
@@ -93,6 +178,18 @@ A Meta-analysis of Agriculture Best Management Practices - 2017 Society for Fres
       <guid>/page/shiny_apps/</guid>
       <description>Work in progress.
 Links to Shiny Apps here along with brief descriptions and a picture</description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>/page/slides/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>/page/slides/</guid>
+      <description>Occasionally I give talks at conferences. These are the slides associated with ones I can make public.
+2020 Adapting Assessment Tools for a Changing Climate Tue, Feb 25, 2020, University of Florida Water Institute Symposium, Gainesville, FL
+ 2018  Assessment of Best Management Practices Ability to Protect Coastal Dune Lake Health Fri, Oct 20, 2018, Florida Association of Aquatic Biologists Annual Meeting 2018, Marineland, FL
+Career profile: Water Quality Environmental Consulting Thu, Nov 1, 2018, Florida Water Environment Association FAMU-FSU Chapter Meeting, Tallahassee, FL</description>
     </item>
     
   </channel>

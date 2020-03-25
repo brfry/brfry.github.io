@@ -15,16 +15,18 @@
   <meta name="twitter:description" content="Well, this blog entry has certainly been delayed more than I anticipated. This post will hopefully give you an introductory background into the motivations behind determining a regulatory number, the …">
   <meta name="author" content="Beck Frydenborg"/>
   <link href='/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="/img/intro_portrait-icon.jpg" />
+  <meta name="twitter:image" content="/img/intro_portrait-icon.jpg" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@@beckfrydenborg" />
-  <meta name="twitter:creator" content="@@beckfrydenborg" />
+  <meta name="twitter:site" content="@@beckborg" />
+  <meta name="twitter:creator" content="@@beckborg" />
   <meta property="og:url" content="/post/2017-03-15-human-health-criteria-part-two/" />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Water Rules" />
+  <meta property="og:site_name" content="" />
 
-  <meta name="generator" content="Hugo 0.23" />
+  <meta name="generator" content="Hugo 0.68.1" />
   <link rel="canonical" href="/post/2017-03-15-human-health-criteria-part-two/" />
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Water Rules">
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -97,7 +99,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">Water Rules</a>
+      <a class="navbar-brand" href="/"></a>
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
@@ -105,7 +107,7 @@
         
           
             <li>
-              <a title="Blog" href="/">Blog</a>
+              <a title="Home" href="/">Home</a>
             </li>
           
         
@@ -117,19 +119,31 @@
         
           
             <li>
-              <a title="Presentations" href="/page/presentations/">Presentations</a>
+              <a title="Slides" href="/page/slides/">Slides</a>
             </li>
           
         
           
             <li>
-              <a title="Shiny" href="/page/shiny_apps/">Shiny</a>
+              <a title="Blog" href="/blog">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Projects" href="/page/projects/">Projects</a>
             </li>
           
         
           
             <li>
               <a title="Archives" href="/tags">Archives</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="art" href="/page/arts/">art</a>
             </li>
           
         
@@ -142,6 +156,10 @@
 
     <div class="avatar-container">
       <div class="avatar-img-border">
+        
+          <a title="" href="/">
+            <img class="avatar-img" src="/img/intro_portrait-icon.jpg" alt="" />
+          </a>
         
       </div>
     </div>
@@ -200,7 +218,10 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>Well, this blog entry has certainly been delayed more than I anticipated. This post will hopefully give you an introductory background into the motivations behind determining a regulatory number, the methods available to set that number, what the major assumptions are, and what the differences are between the methods.</p>
+        
+
+
+<p>Well, this blog entry has certainly been delayed more than I anticipated. This post will hopefully give you an introductory background into the motivations behind determining a regulatory number, the methods available to set that number, what the major assumptions are, and what the differences are between the methods.</p>
 <div id="what-are-the-goals-of-human-health-criteria-regulations" class="section level3">
 <h3>1. What are the goals of human health criteria regulations?</h3>
 <p>Human Health Criteria (HHC) water quality standards are set to ensure that a designated population can safely consume seafood, and swim and drink potable water. The standards take into account a lifetime of exposure and set acceptable levels of risk for undesirable health outcomes such as cancer (usually at a <span class="math inline">\(10^{-5}\)</span> or <span class="math inline">\(10^{-6}\)</span> increase over background for the general population, and <span class="math inline">\(10^{-4}\)</span> for atypical consumers, such as subsistence fishers).</p>
@@ -212,7 +233,8 @@
 <p>EPA has consistently implemented the Clean Water Act to ensure that the total rate of consumption of freshwater and estuarine fish and shellfish (including estuarine species harvested in near coastal waters) reflects consumption rates demonstrated by the population of concern. In other words, EPA expects that the standards will be set to enable residents to safely consume from local waters the amount of fish they would normally consume from all fresh and estuarine waters (including estuarine species harvested in near coastal waters). EPA does not necessarily expect all consumers to eat only fish from a single State, but individuals or groups should be able to do so without concern for their health.</p>
 </blockquote>
 <blockquote>
-<p>Through the use of conservative assumptions with respect to both toxicity and exposure parameters, the resulting AWQC should provide adequate protection not only for the general population over a lifetime of exposure, but also for special subpopulations who, because of high water or fish intake rates, or because of biological sensitivities, have an increased risk of receiving a dose that would elicit adverse effects. The Agency recognizes that there may be some cases where the AWQC based on chronic toxicity may not provide adequate protection for a subpopulation at special risk from shorter-term exposures. The Agency encourages States, Tribes, and others employing the 2000 Human Health Methodology to give consideration to such circumstances in deriving criteria to ensure that adequate protection is afforded to all identifiable subpopulations.</p>
+<p>Through the use of conservative assumptions with respect to both toxicity and exposure parameters, the resulting AWQC should provide adequate protection not only for the general population over a lifetime of exposure, but also for special subpopulations who, because of high water or fish intake rates, or because of biological sensitivities, have an increased risk of receiving a dose that would elicit adverse effects. The
+Agency recognizes that there may be some cases where the AWQC based on chronic toxicity may not provide adequate protection for a subpopulation at special risk from shorter-term exposures. The Agency encourages States, Tribes, and others employing the 2000 Human Health Methodology to give consideration to such circumstances in deriving criteria to ensure that adequate protection is afforded to all identifiable subpopulations.</p>
 </blockquote>
 </div>
 <div id="what-are-the-methods-used-to-set-standards-for-human-health-criteria" class="section level3">
@@ -305,7 +327,7 @@
 <li>CSF = cancer slope factor (mg/kg-day)<span class="math inline">\(^{-1}\)</span></li>
 <li>BW = body weight (kg)</li>
 </ul>
-<p>This equation provides the lifetime incremental risk of a cancer event(e.g. <span class="math inline">\(10^{-6}\)</span>, <span class="math inline">\(10^{-5}\)</span>) due to exposure of the contaminant.</p>
+<p>This equation provides the lifetime incremental risk of a cancer event(e.g. <span class="math inline">\(10^{-6}\)</span>, <span class="math inline">\(10^{-5}\)</span>) due to exposure of the contaminant.</p>
 <hr />
 </div>
 <div id="what-is-a-probablistic-approach" class="section level3">
@@ -376,7 +398,7 @@
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/@beckfrydenborg" title="Twitter">
+                <a href="https://twitter.com/@beckborg" title="Twitter">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -404,16 +426,13 @@
           
 
           &nbsp;&bull;&nbsp;
-          2018
+          2020
 
-          
-            &nbsp;&bull;&nbsp;
-            <a href="/">Water Rules</a>
           
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.23</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.68.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

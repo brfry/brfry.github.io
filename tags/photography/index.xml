@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>photography on </title>
+    <link>/tags/photography/</link>
+    <description>Recent content in photography on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>beck@frecologic.com (Beck Frydenborg)</managingEditor>
+    <webMaster>beck@frecologic.com (Beck Frydenborg)</webMaster>
+    
+	<atom:link href="/tags/photography/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Art</title>
+      <link>/page/arts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>/page/arts/</guid>
+      <description>&lt;h2 id=&#34;photography&#34;&gt;Photography&lt;/h2&gt;
+&lt;hr&gt;
+
+
+&lt;div class=&#34;gallery caption-position-bottom caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
+	  
+  
+&lt;link rel=&#34;stylesheet&#34; href=&#34;/css/hugo-easy-gallery.css&#34; /&gt;
+&lt;div class=&#34;box&#34; &gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;/img/leafs-thumb.jpg&#39;);&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;/img/leafs-thumb.jpg&#34; /&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;/img/leafs.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+  
+
+&lt;div class=&#34;box&#34; &gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;/img/floating_leafs.jpg&#39;);&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;/img/floating_leafs.jpg&#34; alt=&#34;Surface Tension - Beck Frydenborg&#34;/&gt;
+    &lt;/div&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Surface Tension - Beck Frydenborg&lt;/p&gt;
+      &lt;/figcaption&gt;
+    &lt;a href=&#34;/img/floating_leafs.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+  
+
+&lt;div class=&#34;box&#34; &gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;/img/alcatraz.jpg&#39;);&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;/img/alcatraz.jpg&#34; alt=&#34;Alcatraz baracks in black and white - Beck Frydenborg&#34;/&gt;
+    &lt;/div&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Alcatraz baracks in black and white - Beck Frydenborg&lt;/p&gt;
+      &lt;/figcaption&gt;
+    &lt;a href=&#34;/img/alcatraz.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+  
+
+&lt;div class=&#34;box&#34; &gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;/img/self_portrait_bw.jpg&#39;);&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;/img/self_portrait_bw.jpg&#34; alt=&#34;Self Portrait - Beck Frydenborg&#34;/&gt;
+    &lt;/div&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Self Portrait - Beck Frydenborg&lt;/p&gt;
+      &lt;/figcaption&gt;
+    &lt;a href=&#34;/img/self_portrait_bw.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

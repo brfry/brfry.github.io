@@ -1,19 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Water Rules</title>
+    <title>Tags on </title>
     <link>/tags/</link>
-    <description>Recent content in Tags on Water Rules</description>
+    <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>beck@frecologic.com (Beck Frydenborg)</managingEditor>
     <webMaster>beck@frecologic.com (Beck Frydenborg)</webMaster>
-    <lastBuildDate>Tue, 16 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Cycling</title>
+      <title>ecology</title>
+      <link>/tags/ecology/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>/tags/ecology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>visualization</title>
+      <link>/tags/visualization/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>/tags/visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>water policy</title>
+      <link>/tags/water-policy/</link>
+      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>/tags/water-policy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cycling</title>
       <link>/tags/cycling/</link>
       <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
       <author>beck@frecologic.com (Beck Frydenborg)</author>
@@ -22,25 +49,7 @@
     </item>
     
     <item>
-      <title>Ecology</title>
-      <link>/tags/ecology/</link>
-      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
-      <author>beck@frecologic.com (Beck Frydenborg)</author>
-      <guid>/tags/ecology/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Human Health</title>
-      <link>/tags/human-health/</link>
-      <pubDate>Fri, 10 Mar 2017 00:00:00 +0000</pubDate>
-      <author>beck@frecologic.com (Beck Frydenborg)</author>
-      <guid>/tags/human-health/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Personal</title>
+      <title>personal</title>
       <link>/tags/personal/</link>
       <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
       <author>beck@frecologic.com (Beck Frydenborg)</author>
@@ -49,7 +58,16 @@
     </item>
     
     <item>
-      <title>Policy</title>
+      <title>human health</title>
+      <link>/tags/human-health/</link>
+      <pubDate>Fri, 10 Mar 2017 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>/tags/human-health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>policy</title>
       <link>/tags/policy/</link>
       <pubDate>Fri, 10 Mar 2017 00:00:00 +0000</pubDate>
       <author>beck@frecologic.com (Beck Frydenborg)</author>
@@ -58,20 +76,11 @@
     </item>
     
     <item>
-      <title>Visualization</title>
-      <link>/tags/visualization/</link>
-      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
+      <title>photography</title>
+      <link>/tags/photography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>beck@frecologic.com (Beck Frydenborg)</author>
-      <guid>/tags/visualization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Water Policy</title>
-      <link>/tags/water-policy/</link>
-      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
-      <author>beck@frecologic.com (Beck Frydenborg)</author>
-      <guid>/tags/water-policy/</guid>
+      <guid>/tags/photography/</guid>
       <description></description>
     </item>
     

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on Water Rules</title>
+    <title>Pages on </title>
     <link>/page/</link>
-    <description>Recent content in Pages on Water Rules</description>
+    <description>Recent content in Pages on </description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>beck@frecologic.com (Beck Frydenborg)</managingEditor>
     <webMaster>beck@frecologic.com (Beck Frydenborg)</webMaster>
@@ -17,21 +17,95 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>beck@frecologic.com (Beck Frydenborg)</author>
       <guid>/page/about/</guid>
-      <description>&amp;ldquo;We pass through this world but once.&amp;rdquo;
-~ Stephen Jay Gould
- I’m an environmental consultant specializing in water science and policy in Florida.
-My main interests are in using data analysis and visualizations to help clients in the private, public, and nonprofit sectors fulfil their missions and goals while protecting water quality and human health. I&amp;rsquo;ll write about some of that work here.
-In my spare time I enjoy cycling, ultimate frisbee, hiking/backpacking, and photography.</description>
+      <description>I’m an environmental consultant specializing in water science and policy in Florida.
+My main interests are in using data analysis and visualizations to help clients in the private, public, and nonprofit sectors fulfil their missions while protecting water quality and human health. I&amp;rsquo;ll write about some of that work here.
+In my spare time I enjoy ultimate frisbee, cycling, gardening, hiking/backpacking, and being bad at photography and pencil drawing. All photographs on this website are ones I took unless they&amp;rsquo;re good, in which case they are attributed appropriately.</description>
     </item>
     
     <item>
-      <title>Presentation Slides</title>
-      <link>/page/presentations/</link>
+      <title>Art</title>
+      <link>/page/art/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>beck@frecologic.com (Beck Frydenborg)</author>
-      <guid>/page/presentations/</guid>
-      <description>2018 Coming soon 2017 Assessing Coastal Dune Lake Health Fri, Oct 20, 2017, Mattie M. Kelly Environmental Institute Symposium 2017, Niceville, FL
-A Meta-analysis of Agriculture Best Management Practices - 2017 Society for Freshwater Science Thu, Apr 27, 2017, Society for Freshwater Science Annual Meeting, Raleigh, NC</description>
+      <guid>/page/art/</guid>
+      <description>Photography  Digital  Drawing  </description>
+    </item>
+    
+    <item>
+      <title>Art</title>
+      <link>/page/arts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>/page/arts/</guid>
+      <description>&lt;h2 id=&#34;photography&#34;&gt;Photography&lt;/h2&gt;
+&lt;hr&gt;
+
+
+&lt;div class=&#34;gallery caption-position-bottom caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
+	  
+  
+&lt;link rel=&#34;stylesheet&#34; href=&#34;/css/hugo-easy-gallery.css&#34; /&gt;
+&lt;div class=&#34;box&#34; &gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;/img/leafs-thumb.jpg&#39;);&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;/img/leafs-thumb.jpg&#34; /&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;/img/leafs.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+  
+
+&lt;div class=&#34;box&#34; &gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;/img/floating_leafs.jpg&#39;);&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;/img/floating_leafs.jpg&#34; alt=&#34;Surface Tension - Beck Frydenborg&#34;/&gt;
+    &lt;/div&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Surface Tension - Beck Frydenborg&lt;/p&gt;
+      &lt;/figcaption&gt;
+    &lt;a href=&#34;/img/floating_leafs.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+  
+
+&lt;div class=&#34;box&#34; &gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;/img/alcatraz.jpg&#39;);&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;/img/alcatraz.jpg&#34; alt=&#34;Alcatraz baracks in black and white - Beck Frydenborg&#34;/&gt;
+    &lt;/div&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Alcatraz baracks in black and white - Beck Frydenborg&lt;/p&gt;
+      &lt;/figcaption&gt;
+    &lt;a href=&#34;/img/alcatraz.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+  
+
+&lt;div class=&#34;box&#34; &gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;/img/self_portrait_bw.jpg&#39;);&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;/img/self_portrait_bw.jpg&#34; alt=&#34;Self Portrait - Beck Frydenborg&#34;/&gt;
+    &lt;/div&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Self Portrait - Beck Frydenborg&lt;/p&gt;
+      &lt;/figcaption&gt;
+    &lt;a href=&#34;/img/self_portrait_bw.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>/page/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>/page/projects/</guid>
+      <description>Antibiotic Resistance and Water Quality Dashboard 
+I developed a Shiny site for the Lipp Lab at the University of Georgia.
+This site allows the user to examine water quality data collected by Upper Oconee Watershed Network volunteers alongside the antibiotic resistance research conducted by the Lipp Lab under a grant from the CDC.
+ </description>
     </item>
     
     <item>
@@ -42,6 +116,18 @@ A Meta-analysis of Agriculture Best Management Practices - 2017 Society for Fres
       <guid>/page/shiny_apps/</guid>
       <description>Work in progress.
 Links to Shiny Apps here along with brief descriptions and a picture</description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>/page/slides/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>/page/slides/</guid>
+      <description>Occasionally I give talks at conferences. These are the slides associated with ones I can make public.
+2020 Adapting Assessment Tools for a Changing Climate Tue, Feb 25, 2020, University of Florida Water Institute Symposium, Gainesville, FL
+ 2018  Assessment of Best Management Practices Ability to Protect Coastal Dune Lake Health Fri, Oct 20, 2018, Florida Association of Aquatic Biologists Annual Meeting 2018, Marineland, FL
+Career profile: Water Quality Environmental Consulting Thu, Nov 1, 2018, Florida Water Environment Association FAMU-FSU Chapter Meeting, Tallahassee, FL</description>
     </item>
     
   </channel>

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Water Policy on Water Rules</title>
+    <title>water policy on </title>
     <link>/categories/water-policy/</link>
-    <description>Recent content in Water Policy on Water Rules</description>
+    <description>Recent content in water policy on </description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>beck@frecologic.com (Beck Frydenborg)</managingEditor>
     <webMaster>beck@frecologic.com (Beck Frydenborg)</webMaster>
@@ -14,10 +14,10 @@
     
     <item>
       <title>Decision Making and Distributions</title>
-      <link>/post/decisions_distributions/</link>
+      <link>/blog/decisions_distributions/</link>
       <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
       <author>beck@frecologic.com (Beck Frydenborg)</author>
-      <guid>/post/decisions_distributions/</guid>
+      <guid>/blog/decisions_distributions/</guid>
       <description>Sometimes in environmental regulation, we are unable to find a clear cause-effect relationship between a known stressor and a known response due to confounders. This is a common problem when attempting to determine acceptable nutrient regimes for some systems. For example, Florida Department of Environmental Protection (FDEP) was required to promulgate Numeric Nutrient Criteria for estuaries as the result of a lawsuit, yet no straightforward cause-effect relationship could be found for Total Nitrogen (TN) and/or Total Phosphorus (TP) leading to excess Chlorophyll a, which in turn lead to submerged aquatic vegetation (SAV) die-off resulting in the loss of this key habitat for these highly productive systems.</description>
     </item>
     

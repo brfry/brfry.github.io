@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Human Health on Water Rules</title>
+    <title>human health on </title>
     <link>/tags/human-health/</link>
-    <description>Recent content in Human Health on Water Rules</description>
+    <description>Recent content in human health on </description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>beck@frecologic.com (Beck Frydenborg)</managingEditor>
     <webMaster>beck@frecologic.com (Beck Frydenborg)</webMaster>
@@ -14,10 +14,10 @@
     
     <item>
       <title>Human Health Criteria Part One</title>
-      <link>/post/human-health-criteria-part-one/</link>
+      <link>/blog/human-health-criteria-part-one/</link>
       <pubDate>Fri, 10 Mar 2017 00:00:00 +0000</pubDate>
       <author>beck@frecologic.com (Beck Frydenborg)</author>
-      <guid>/post/human-health-criteria-part-one/</guid>
+      <guid>/blog/human-health-criteria-part-one/</guid>
       <description>Recently in Florida, there has been some controversy over an update to Human Health Criteria (HHC) that the Florida Department of Environmental Protection (FDEP) promulgated concerning acceptable levels for 88 carcinogens in ambient water and seafood. Most notably, many environmental activists are concerned that historic numbers for several substances are proposed to increase. Many blame FDEP’s use of a probabilistic model instead of the previously used deterministic model, and this theme was repeated in the press:</description>
     </item>
     

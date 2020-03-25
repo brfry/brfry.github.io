@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Decision Making and Distributions</title>
+  <meta property="og:title" content="Decision Making and Distributions" />
+  <meta name="twitter:title" content="Decision Making and Distributions" />
+  <meta name="description" content="Be Careful">
+  <meta property="og:description" content="Be Careful">
+  <meta name="twitter:description" content="Be Careful">
+  <meta name="author" content="Beck Frydenborg"/>
+  <link href='/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="/img/intro_portrait-icon.jpg" />
+  <meta name="twitter:image" content="/img/intro_portrait-icon.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@@beckborg" />
+  <meta name="twitter:creator" content="@@beckborg" />
+  <meta property="og:url" content="/blog/decisions_distributions/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="" />
+
+  <meta name="generator" content="Hugo 0.68.1" />
+  <link rel="canonical" href="/blog/decisions_distributions/" />
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="/css/codeblock.css" />
+  <link rel="stylesheet" href="/css/highlight.min.css" />
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Home" href="/">Home</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Slides" href="/page/slides/">Slides</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Blog" href="/blog">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Projects" href="/page/projects/">Projects</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="art" href="/page/arts/">art</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="" href="/">
+            <img class="avatar-img" src="/img/intro_portrait-icon.jpg" alt="" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+    <div id="header-big-imgs" data-num-img=1 data-img-src-1="/img/distributions.png" ></div>
+  
+
+  <header class="header-section has-img">
+    
+      <div class="intro-header big-img">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="blog-heading">
+                <h1>Decision Making and Distributions</h1>
+                  
+                    
+                      <h2 class="blog-subheading">Be Careful</h2>
+                    
+                  
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: inline;"></span>
+      </div>
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="blog-heading">
+              <h1>Decision Making and Distributions</h1>
+                
+                  
+                    <h2 class="blog-subheading">Be Careful</h2>
+                  
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+
+<p>Sometimes in environmental regulation, we are unable to find a clear cause-effect relationship between a known stressor and a known response due to confounders. This is a common problem when attempting to determine acceptable nutrient regimes for some systems. For example, Florida Department of Environmental Protection (FDEP) was required to promulgate Numeric Nutrient Criteria for estuaries as the result of a lawsuit, yet no straightforward cause-effect relationship could be found for Total Nitrogen (TN) and/or Total Phosphorus (TP) leading to excess Chlorophyll a, which in turn lead to submerged aquatic vegetation (SAV) die-off resulting in the loss of this key habitat for these highly productive systems.</p>
+<p>Due to this difficulty, FDEP used a maintain existing conditions approach, in which long term data sets for estuaries assessed to have acceptable/healthy biology were used to calculate criteria. This approach involved taking the entire distribution of data for a particular estuary and taking the 80th percentile of the data. The estuary would then be deemed impaired if it exceeded the Annual Geometric Mean (AGM) more than once in a three year period (a 10 percent false positive rate).</p>
+<p>I mention this background because a recent project I was involved in employed this approach in a slightly modified format, and want to highlight the potential challenges with applying the approach. We studied a series of spatially related lakes which we found to have different levels of human disturbance, and different levels of associated biological health. However, stakeholders like to have simple water quality goals to summarize the state of the lakes. We thought: no problem FDEP has done this before. We will take the group of lakes deemed healthy for their biology (and have a low human impact score) and determine the 80th percentile of this data distribution. However, it soon became clear that the approach developed for an individual estuary was more challenging when applied to a group of lakes. Namely this is a lesson to always check the underlying distribution of your data sets.</p>
+<p>I think it’s easiest to demonstrate with an example.</p>
+<hr />
+<p>Load packages and set the size of figures.</p>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.2.1 --</code></pre>
+<pre><code>## v ggplot2 2.2.1     v purrr   0.2.4
+## v tibble  1.4.2     v dplyr   0.7.4
+## v tidyr   0.8.0     v stringr 1.3.0
+## v readr   1.1.1     v forcats 0.3.0</code></pre>
+<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code># set figure size
+knitr::opts_chunk$set(fig.width=12, fig.height=9, message = FALSE, 
+                      warning = FALSE)</code></pre>
+<p>Next let’s make a sample data set. For this data set, I have designated five lakes as healthy, and 2 as degraded. Each has an associated result which could be any parameter we were interested in setting a goal/limit for before taking action (e.g. Total Nitrogen).</p>
+<pre class="r"><code># make several different distributions:
+set.seed(1234)
+
+# this data set has factor of cond (condition), and then a distribution of results
+data_df &lt;- data.frame(lake = factor(rep(c(&quot;A&quot;,&quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;, &quot;G&quot;), 
+                                        each=200)),
+                      bio = factor(rep(c(&quot;healthy&quot;, &quot;healthy&quot;, &quot;healthy&quot;, 
+                                         &quot;healthy&quot;, &quot;healthy&quot;, &quot;degraded&quot;, 
+                                         &quot;degraded&quot;), each=200)),
+                   result = c(rnorm(200, mean = 1),
+                              rnorm(200, mean = 2),
+                              rnorm(200, mean = 3),
+                              rnorm(200, mean = 4),
+                              rnorm(200, mean = 5),
+                              rnorm(200, mean = 8),
+                              rnorm(200, mean = 9)))</code></pre>
+<p>We’ll go ahead and designate a color palette, base plot template, and an additional data frame of the the healthy lakes.</p>
+<pre class="r"><code>data_ref_df &lt;- data_df %&gt;% filter(bio == &quot;healthy&quot;)
+
+# set custom colors for lakes. picked out using colorbrewer2.org:
+lake_col &lt;- c(&quot;#01665e&quot;, &quot;#5ab4ac&quot;, &quot;#c7eae5&quot;, &quot;#f5f5f5&quot;, &quot;#f6e8c3&quot;, &quot;#d8b365&quot;,
+              &quot;#8c510a&quot;)
+# bio colors:
+bio_col &lt;- c(&quot;#8c510a&quot;, &quot;#01665e&quot;)
+        
+# base data for plots along with theme
+p &lt;- ggplot(data_ref_df, aes(x=result)) + 
+        theme_bw() + scale_fill_manual(values = lake_col)</code></pre>
+<p>Let’s graph the two distributions of lake classification (healthy and degraded) and draw a line at the 80th percentile of the healthy lake distribution. This appears to give us close to no false negatives, and an acceptable rate of false positives if we make the criteria a “more than once in a three year period”. Looks great, right?</p>
+<pre class="r"><code>p + geom_vline(data = data_ref_df, 
+               xintercept = quantile(data_ref_df$result, 0.8), 
+               linetype = &quot;dashed&quot;, size = 1) + # 80th percentile
+    geom_density(data = data_df, aes(fill = bio), 
+                 alpha = 0.5) + scale_fill_manual(values = bio_col) </code></pre>
+<p><img src="/post/decisions_distributions_files/figure-html/unnamed-chunk-4-1.png" width="1152" /></p>
+<p>However, if we were to stop here, it would be a mistake. The reason is that our healthy distribution is actually composed of five different lakes, each with their own distribution of values.</p>
+<p>Let’s look at the distribution of data for each lake:</p>
+<pre class="r"><code> p + 
+        geom_density(data = data_df, aes(fill=lake), alpha = 0.5) +
+        theme_bw()</code></pre>
+<p><img src="/post/decisions_distributions_files/figure-html/unnamed-chunk-5-1.png" width="1152" /></p>
+<p>Right, so the five lakes deemed to be healthy based on biology do not have identical distributions of this pretend water quality parameter. Let’s look at those distributions that all fall under the “good” biology designation in more detail. Here we have the individual lake distributions and then the overall distribution of lakes. Again we have the 80th percentile of that overall distribution. Immediately obvious is that one of the lakes that we have deemed healthy based on biology would be deemed impaired by this water quality goal in more than 50% of samples. That seems crazy.</p>
+<pre class="r"><code># everything together:
+p + 
+        geom_density(aes(fill=lake), alpha = 0.5) + # distribution of factors
+        geom_vline(xintercept = quantile(data_ref_df$result, 0.8), 
+                   linetype = &quot;dashed&quot;, size = 1) + # 80th percentile
+         geom_density(size = 1) # overall distribution</code></pre>
+<p><img src="/post/decisions_distributions_files/figure-html/unnamed-chunk-6-1.png" width="1152" /></p>
+<p>This becomes clearer when making facets of the data.</p>
+<pre class="r"><code>ggplot(data_df, aes(x=result)) +  theme_bw() +
+        geom_density(aes(fill=bio), alpha = 0.5) + # distribution of factors
+        geom_vline(xintercept = quantile(data_ref_df$result, 0.8), 
+                   linetype = &quot;dashed&quot;, size = 1) + # 80th percentile
+        facet_grid(lake~.) + scale_fill_manual(values = bio_col) </code></pre>
+<p><img src="/post/decisions_distributions_files/figure-html/unnamed-chunk-7-1.png" width="1152" /></p>
+<p>Finally, here is what it would look like if we took the 80th percentile of each of the 5 lakes.</p>
+<pre class="r"><code># get the 80th percentile of each underlying distribution
+data2_df &lt;- data_ref_df %&gt;% group_by(lake) %&gt;%
+        summarise(quant80 = quantile(result, 0.8))
+
+# graph
+ggplot(data_df, aes(x=result)) +  theme_bw() +
+        geom_density(aes(fill = bio), alpha = 0.5) + # distribution of factors
+        theme_bw() +
+         geom_vline(data = data2_df, 
+                 aes(xintercept = as.numeric(quant80),
+                   colour = &quot;#FF0000&quot;), 
+                 linetype = 2, size = 1) + # 80th percentile of each dist
+         geom_vline(xintercept = quantile(data_ref_df$result, 0.8), 
+                   linetype = 2, size = 1) +
+        facet_grid(lake~.) + scale_fill_manual(values = bio_col) </code></pre>
+<p><img src="/post/decisions_distributions_files/figure-html/unnamed-chunk-8-1.png" width="1152" /></p>
+<p>So we see our problem: it is not appropriate to promulgate water quality criteria using an overall distribution if the underlying distributions of data sets are not random but are instead a result of other structures of the data.</p>
+<p>There are many approaches for setting water quality goals given what we have learned about the underlying structure of our data. For example, we might decide to give each lake its own goal based on the same math. However, how do we generalize a goal to lakes that do not currently meet our goal of a healthy biological community?</p>
+<p>Ultimately for our project, we decided to take a two step approach:</p>
+<ol style="list-style-type: decimal">
+<li>Evaluate water quality goals based on entire distribution approach. This means that one or two lakes will not meet the goals because of the underlying distributions while still having healthy and well balanced biology.</li>
+<li>If a water quality goal is not being met, evaluate the biology. Is the plant community trending downwards or not similar to our goal lake data set? Is the level of human disturbance increasing as these downward water quality trends are occurring? If so, take remedial actions.</li>
+</ol>
+
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="/blog/2017-year-in-review/" data-toggle="tooltip" data-placement="top" title="2017 Year in Review">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="/blog/covid-19-and-other-pandemics/" data-toggle="tooltip" data-placement="top" title="COVID-19 and other Pandemics">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:beck@frecologic.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/brfry" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/@beckborg" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            
+            <a href="/index.xml" title="RSS">
+            
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="brfry.github.io">Beck Frydenborg</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;
+          2020
+
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.68.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/js/main.js"></script>
+<script src="/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
+

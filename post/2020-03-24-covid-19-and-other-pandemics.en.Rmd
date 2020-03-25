@@ -1,0 +1,187 @@
+---
+title: COVID-19 and other Pandemics
+author: Beck Frydenborg
+date: '2020-03-24'
+categories:
+  - human health
+  - R
+  - visualization
+tags:
+  - ecology
+  - visualization
+slug: covid-19-and-other-pandemics
+---
+
+I've seen this graphic from this [blog](https://www.visualcapitalist.com/history-of-pandemics-deadliest/) going around, and while I agree that it is pretty and visually interesting, I find it mostly ineffective for communicating the magnitudes of pandemics over time. Our eyes and brains have a difficult time comparing the volume of spheres compared to a line on a bar chart. Additionally, the image is three dimensional in perspective, which further obfuscates direct comparisons.
+
+```{r, message=FALSE}
+knitr::include_graphics("../../static/img/deadliestpandemics-infographic-15.jpg")
+```
+
+So since I'm in quarentine, I decided to make a more basic image that allows one to compare magnitudes better.
+
+First thing is to load the libraries needed along with the data set. This data was scraped from the original webpage, and then slightly cleaned within excel (e.g. dates that were listed as present were changed to 2020). This data set has not been thoroughly checked by me for accuracy, but I did change the extent of the new world smallpox to be from first contacts (circa 1520) to 1792 instead of to present. This change was made because while smaller smallpox outbreaks continued to occur until the vaccine was discovered, the main outbreaks that decimated the native populations of the new world were mostly over by the late 1700s.
+
+```{r, message=FALSE, warning=FALSE}
+# libraries
+library(tidyverse)
+
+# load data
+pandem_df <- readxl::read_xlsx("../../static/data/pandemic_data.xlsx")
+```
+
+Next we will add seperate columns for the time period for later analysis.
+
+```{r}
+# give a start and end date as well
+pandem_df <- pandem_df %>%
+  separate(`Time period`, sep = "-", c("Start", "End"), remove = FALSE) %>%
+  mutate(Start = as.numeric(Start),
+         End = as.numeric(End))
+
+```
+
+We will go ahead and make a few color pallettes for later visualization.
+
+```{r}
+cols <- c("#999999", "#999999", "#999999", "#999999","#c51b7d", "#999999",
+          "#999999", "#999999", "#999999", "#999999", "#999999", "#999999",
+          "#999999", "#999999", "#999999", "#999999", "#999999", "#999999",
+          "#999999", "#999999")
+
+cols3 <- c("#613318", "#855732", "#d57500", "#668d3c", "#c51b7d", #earth tones
+           "#ff0000", "#ff5600", "#6e48cf", "#000000", "#a00000", #aries mckennab 
+           "#004159", "#8c65d3", "#0052a5", "#00adce", "#00c590", # cool blue and green
+           "#2affea", "#ff4141", "#2cc6c1", "#0093c0", "#cecece") #Aquarius mckennab
+
+text_col <- ifelse(pandem_df$Name == "SARS", "#c51b7d", "#999999")
+
+caption1 <- "Data scraped from https://www.visualcapitalist.com/history-of-pandemics-deadliest/.
+       Dates for Smallpox adjusted from original source."
+```
+
+***
+
+First we will look at the pandemics by decreasing death toll. 
+
+```{r, message=FALSE, warning=FALSE}
+p <- pandem_df %>%
+  ggplot(aes(x = reorder(Name, desc(death_toll)), y = death_toll)) +
+  geom_col(aes(fill = Name)) +
+  scale_fill_manual(values = cols)  +
+  theme_bw() +
+  theme(axis.text.x = element_text(hjust=1, angle=45, colour = text_col)) +
+  guides(fill = FALSE) +
+  labs(title = "Death Toll of Selected Pandemics",
+       y = "Total Deaths", x = "Pandemic",
+       caption = caption1)
+
+p + scale_y_continuous(breaks = c(1*10^1, #1*10^2, 1*10^3, 1*10^4, 1*10^5,
+                          # 1*10^6, 
+                          1*10^7, 1*10^8, 2*10^8 ),
+                limits = c(NA, 2*10^8))
+
+```
+
+Looks like a log scale would help here.
+
+```{r, warning=FALSE}
+# visualize by most deaths (log scale)
+
+p +  scale_y_log10(breaks = c(1*10^1, 1*10^2, 1*10^3, 1*10^4, 1*10^5,
+                           1*10^6, 1*10^7, 1*10^8, 1*10^9, 1*10^10),
+                limits = c(NA, 1*10^9)) 
+
+```
+
+We can then examine the death toll over time. Again we will do a log transformation to better visualize.
+
+```{r, warning=FALSE}
+p <- pandem_df %>%
+  ggplot(aes(x = reorder(Name, desc(-Start)), y = death_toll)) +
+  geom_col(aes(fill = Name)) +
+  scale_fill_manual(values = cols) + 
+  theme_bw() +
+  theme(axis.text.x = element_text(hjust=1, angle=45)) +
+  guides(fill = FALSE) +
+  labs(title = "Death Toll of Selected Pandemics",
+       subtitle = "Ordered by least recent to most recent",
+       y = "Total Deaths", x = "Pandemic",
+       caption = caption1) 
+
+p + scale_y_continuous(breaks = c(1*10^1, 1*10^7, 1*10^8, 2*10^8 ),
+                     limits = c(NA, 2*10^8))
+```
+
+And a log scale again.
+
+```{r, warning = FALSE}
+# over timepandem_df %>%
+ p + scale_y_log10(breaks = c(1*10^1, 1*10^2, 1*10^3, 1*10^4, 1*10^5,
+                           1*10^6, 1*10^7, 1*10^8, 1*10^9, 1*10^10),
+                limits = c(NA, 1*10^9))
+
+```
+
+We can also focus in to how the death toll compares to the most recent pandemics that have occurred during the modern medicine period.
+
+```{r, warning=FALSE}
+# comparing to 20th century pandemics
+pandem_19_df <- pandem_df %>%
+  filter(Name %in% c("HIV/AIDS", "SARS", "Swine Flu", "Ebola", "MERS", "COVID-19"))
+text_col <- ifelse(pandem_19_df$Name == "COVID-19", "#c51b7d", "#999999")
+cols <- ifelse(pandem_19_df$Name == "HIV/AIDS", "#c51b7d", "#999999")
+
+pandem_df %>%
+  filter(Name %in% c("HIV/AIDS", "SARS", "Swine Flu", "Ebola", "MERS", "COVID-19")) %>%
+  ggplot(aes(x = reorder(Name, desc(-Start)), y = death_toll)) +
+  geom_col(aes(fill = Name)) +
+  scale_fill_manual(values = cols) + 
+  scale_y_log10((breaks = c(1*10^1, 1*10^2, 1*10^3, 1*10^4, 1*10^5,
+                                1*10^6, 1*10^7,1*10^8))) +
+  theme_bw() +
+  theme(axis.text.x = element_text(hjust=1, angle=45, colour = text_col)) +
+  guides(fill = FALSE) +
+  labs(title = "Death Toll of Selected Pandemics",
+       subtitle = "Ordered by least recent to most recent",
+       y = "Total Deaths (log scale)", x = "Recent Pandemics",
+       caption = caption1) 
+```
+
+The deaths from HIV are an order of magnitude greater than the others, so if we drop that, we can compare on the normal scale without log transformation.
+
+```{r}
+#normal scale, no HIV/AIDS
+pandem_df %>%
+  filter(Name %in% c("SARS", "Swine Flu", "Ebola", "MERS", "COVID-19")) %>%
+  ggplot(aes(x = reorder(Name, desc(-Start)), y = death_toll)) +
+  geom_col(aes(fill = Name)) +
+  scale_fill_manual(values = cols) + 
+  theme_bw() +
+  theme(axis.text.x = element_text(hjust=1, angle=45, colour = text_col)) +
+  guides(fill = FALSE) +
+  labs(title = "Death Toll of Selected Pandemics",
+       subtitle = "Ordered by least recent to most recent",
+       y = "Total Deaths", x = " Recent Pandemics",
+       caption = caption1) 
+```
+
+Finally I thought it would be interesting to examine the pandemics over time. Using  geom_rect() we can see both the death toll on the y-axis, as well as the length of each pandemic on the x-axis. It's interesting to see different disease dynamics this way.I think most notable to me is the HIV/AIDS pandemic. This pandemic looks similar to pre-modern medicine era ones despite occuring recently, and is indicative of the failure of government to act.
+
+```{r, warning=FALSE}
+# over time with time extent (geom_rect)
+
+pandem_df %>%
+  ggplot(aes(ymin = 0, ymax = death_toll, fill = Name)) +
+  geom_rect(aes(xmin = Start, xmax = End)) +
+  theme_bw() +
+  theme(legend.position="bottom") +
+  scale_y_log10(breaks = c(1*10^1, 1*10^2, 1*10^3, 1*10^4, 1*10^5,
+                            1*10^6, 1*10^7, 1*10^8, 1*10^9)) +
+  scale_fill_manual(values = cols3) +
+  labs(title = "Pandemics Throughout History",
+       x = "Year", y = "Death Toll (log scale)",
+       caption = caption1)
+
+```
+
