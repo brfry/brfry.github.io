@@ -422,7 +422,8 @@ caption1 &lt;- &quot;Data scraped from https://www.visualcapitalist.com/history-
   scale_fill_manual(values = cols)  +
   theme_bw() +
   theme(axis.text.x = element_text(hjust=1, angle=45, 
-                                   colour = text_col)) +
+                                   colour = text_col),
+        axis.text.y = element_text(colour = text_col)) +
   guides(fill = FALSE) +
   labs(title = &quot;Death Toll of Selected Pandemics&quot;,
        y = &quot;Total Deaths&quot;, x = &quot;Pandemic&quot;,
