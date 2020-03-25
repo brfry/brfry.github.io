@@ -417,24 +417,25 @@ caption1 &lt;- &quot;Data scraped from https://www.visualcapitalist.com/history-
 <h2>Visualizations</h2>
 <p>First we will look at the pandemics by decreasing death toll.</p>
 <pre class="r"><code>p &lt;- pandem_df %&gt;%
-  ggplot(aes(x = reorder(Name, desc(death_toll)), y = death_toll)) +
+  ggplot(aes(x = reorder(Name, desc(-death_toll)), y = death_toll)) +
   geom_col(aes(fill = Name)) +
   scale_fill_manual(values = cols)  +
   theme_bw() +
-  theme(axis.text.x = element_text(hjust=1, angle=45, colour = text_col)) +
+  theme(axis.text.x = element_text(hjust=1, angle=45, 
+                                   colour = text_col)) +
   guides(fill = FALSE) +
   labs(title = &quot;Death Toll of Selected Pandemics&quot;,
        y = &quot;Total Deaths&quot;, x = &quot;Pandemic&quot;,
-       caption = caption1)
+       caption = caption1) + coord_flip()
 
 p + scale_y_continuous(breaks = c(1*10^1, 1*10^7, 1*10^8, 2*10^8 ),
-                limits = c(NA, 2*10^8))</code></pre>
-<p><img src="/post/2020-03-24-covid-19-and-other-pandemics.en_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+                limits = c(NA, 2*10^8)) </code></pre>
+<p><img src="/blog/2020-03-24-covid-19-and-other-pandemics.en_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <p>Looks like a log scale would help here. I’ll also add in more breaks to aid in comparison over the log scale.</p>
 <pre class="r"><code>p +  scale_y_log10(breaks = c(1*10^1, 1*10^2, 1*10^3, 1*10^4, 1*10^5,
                            1*10^6, 1*10^7, 1*10^8, 1*10^9, 1*10^10),
                 limits = c(NA, 1*10^9)) </code></pre>
-<p><img src="/post/2020-03-24-covid-19-and-other-pandemics.en_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p><img src="/blog/2020-03-24-covid-19-and-other-pandemics.en_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 <p>We can then examine the death toll over time.</p>
 <pre class="r"><code>p &lt;- pandem_df %&gt;%
   ggplot(aes(x = reorder(Name, desc(-Start)), y = death_toll)) +
@@ -446,16 +447,16 @@ p + scale_y_continuous(breaks = c(1*10^1, 1*10^7, 1*10^8, 2*10^8 ),
   labs(title = &quot;Death Toll of Selected Pandemics&quot;,
        subtitle = &quot;Ordered by least recent to most recent&quot;,
        y = &quot;Total Deaths&quot;, x = &quot;Pandemic&quot;,
-       caption = caption1) 
+       caption = caption1) + coord_flip()
 
 p + scale_y_continuous(breaks = c(1*10^1, 1*10^7, 1*10^8, 2*10^8 ),
                      limits = c(NA, 2*10^8))</code></pre>
-<p><img src="/post/2020-03-24-covid-19-and-other-pandemics.en_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p><img src="/blog/2020-03-24-covid-19-and-other-pandemics.en_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 <p>Again we will do a log transformation to better visualize.</p>
 <pre class="r"><code> p + scale_y_log10(breaks = c(1*10^1, 1*10^2, 1*10^3, 1*10^4, 1*10^5,
                            1*10^6, 1*10^7, 1*10^8, 1*10^9, 1*10^10),
                 limits = c(NA, 1*10^9))</code></pre>
-<p><img src="/post/2020-03-24-covid-19-and-other-pandemics.en_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p><img src="/blog/2020-03-24-covid-19-and-other-pandemics.en_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 <p>We can also zoom our focus in to how the death toll compares to the most recent pandemics that have occurred during the modern medicine period in the 20th century.</p>
 <pre class="r"><code># comparing to 20th century pandemics
 pandem_19_df &lt;- pandem_df %&gt;%
@@ -476,8 +477,8 @@ pandem_df %&gt;%
   labs(title = &quot;Death Toll of Selected Pandemics&quot;,
        subtitle = &quot;Ordered by least recent to most recent&quot;,
        y = &quot;Total Deaths (log scale)&quot;, x = &quot;Recent Pandemics&quot;,
-       caption = caption1) </code></pre>
-<p><img src="/post/2020-03-24-covid-19-and-other-pandemics.en_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+       caption = caption1) + coord_flip()</code></pre>
+<p><img src="/blog/2020-03-24-covid-19-and-other-pandemics.en_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 <p>The deaths from HIV are an order of magnitude greater than the others, so if we drop that, we can compare on the normal scale without log transformation. Immediately notable is that despite the pandemic not being close to over, CoVD-19 has already killed more people than the previous coronavirus pandemics (MERS, SARS), and will be much deadlier than Ebola. Depending on containment efforts by governments, it seems likely that the death toll will exceed that of swine flu as well at this point.</p>
 <pre class="r"><code>#normal scale, no HIV/AIDS
 pandem_df %&gt;%
@@ -491,8 +492,8 @@ pandem_df %&gt;%
   labs(title = &quot;Death Toll of Selected Pandemics&quot;,
        subtitle = &quot;Ordered by least recent to most recent&quot;,
        y = &quot;Total Deaths&quot;, x = &quot; Recent Pandemics&quot;,
-       caption = caption1) </code></pre>
-<p><img src="/post/2020-03-24-covid-19-and-other-pandemics.en_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+       caption = caption1) + coord_flip()</code></pre>
+<p><img src="/blog/2020-03-24-covid-19-and-other-pandemics.en_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 <p>Finally I thought it would be interesting to examine the pandemics over time. Using <code>geom_rect()</code> we can see both the death toll on the y-axis, as well as the length of each pandemic on the x-axis. It’s interesting to see different disease dynamics this way.I think most notable to me is the HIV/AIDS pandemic. This pandemic looks similar to pre-modern medicine era ones despite occuring recently, and is indicative of the failure of government to act.</p>
 <pre class="r"><code># over time with time extent (geom_rect)
 
@@ -507,9 +508,9 @@ pandem_df %&gt;%
   labs(title = &quot;Pandemics Throughout History&quot;,
        x = &quot;Year&quot;, y = &quot;Death Toll (log scale)&quot;,
        caption = caption1)</code></pre>
-<p><img src="/post/2020-03-24-covid-19-and-other-pandemics.en_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p><img src="/blog/2020-03-24-covid-19-and-other-pandemics.en_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
 <hr />
-<p>That’s it for now. I hope everyone is socially distancing and doing their part to helpe prevent this current pandemic from looking like pandemics from the past!</p>
+<p>That’s it for now. I hope everyone is socially distancing and doing their part to help prevent this current pandemic from looking like pandemics from the past!</p>
 </div>
 
       </article>
