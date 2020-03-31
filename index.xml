@@ -164,8 +164,7 @@ In my spare time I enjoy ultimate frisbee, cycling, gardening, hiking/backpackin
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>beck@frecologic.com (Beck Frydenborg)</author>
       <guid>/page/projects/</guid>
-      <description>Antibiotic Resistance and Water Quality Dashboard 
-I developed a Shiny site for the Lipp Lab at the University of Georgia.
+      <description>Antibiotic Resistance and Water Quality Dashboard I developed a Shiny site for the Lipp Lab at the University of Georgia.
 This site allows the user to examine water quality data collected by Upper Oconee Watershed Network volunteers alongside the antibiotic resistance research conducted by the Lipp Lab under a grant from the CDC.
  </description>
     </item>
