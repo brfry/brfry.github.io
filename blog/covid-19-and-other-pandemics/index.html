@@ -10,18 +10,18 @@
   <meta name="twitter:title" content="COVID-19 and other Pandemics" />
   <meta name="description" content="I’ve seen this graphic from this blog going around, and while I agree that it is pretty and visually interesting, I find it mostly ineffective for communicating the magnitudes of pandemics over time. Our eyes and brains have a difficult time comparing the volume of spheres compared to a line on a bar chart. Additionally, the image is three dimensional in perspective, which further obfuscates direct comparisons.
 Pandemics
-So since I’m in quarentine, I decided to make a more basic image that allows one to compare magnitudes better.">
+So since I’m in quarantine, I decided to make a more basic image that allows one to compare magnitudes better.">
   <meta property="og:description" content="I’ve seen this graphic from this blog going around, and while I agree that it is pretty and visually interesting, I find it mostly ineffective for communicating the magnitudes of pandemics over time. Our eyes and brains have a difficult time comparing the volume of spheres compared to a line on a bar chart. Additionally, the image is three dimensional in perspective, which further obfuscates direct comparisons.
 Pandemics
-So since I’m in quarentine, I decided to make a more basic image that allows one to compare magnitudes better.">
+So since I’m in quarantine, I decided to make a more basic image that allows one to compare magnitudes better.">
   <meta name="twitter:description" content="I’ve seen this graphic from this blog going around, and while I agree that it is pretty and visually interesting, I find it mostly ineffective for communicating the magnitudes of pandemics over time. …">
   <meta name="author" content="Beck Frydenborg"/>
   <link href='/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="/img/intro_portrait-icon.jpg" />
   <meta name="twitter:image" content="/img/intro_portrait-icon.jpg" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@@beckborg" />
-  <meta name="twitter:creator" content="@@beckborg" />
+  <meta name="twitter:site" content="@@becksborg" />
+  <meta name="twitter:creator" content="@@becksborg" />
   <meta property="og:url" content="/blog/covid-19-and-other-pandemics/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Beck" />
@@ -208,8 +208,8 @@ Pandemics
 <img src="/post/2020-03-24-covid-19-and-other-pandemics.en_files/deadliestpandemics-infographic-15.jpg" alt="Pandemics" width="400" />
 <p class="caption">Pandemics</p>
 </div>
-<p>So since I’m in quarentine, I decided to make a more basic image that allows one to compare magnitudes better.</p>
-<p>First thing is to load the libraries needed along with the data set. This data was scraped from the original webpage, and then slightly cleaned within excel (e.g. dates that were listed as present were changed to 2020). This data set has not been thoroughly checked by me for accuracy, but I did change the extent of the new world smallpox to be from first contacts (circa 1520) to 1792 instead of to present. This change was made because while smaller smallpox outbreaks continued to occur until the vaccine was discovered, the main outbreaks that decimated the native populations of the new world were mostly over by the late 1700s.</p>
+<p>So since I’m in quarantine, I decided to make a more basic image that allows one to compare magnitudes better.</p>
+<p>First thing is to load the libraries needed along with the data set. This data set was scraped from the original webpage, and then slightly cleaned within excel (e.g. dates that were listed as present were changed to 2020). This data set has not been thoroughly checked by me for accuracy, but I did change the extent of the new world smallpox to be from first contacts (circa 1520) to 1792 instead of to present. This change was made because while smaller smallpox outbreaks continued to occur until the vaccine was discovered, the main outbreaks that decimated the native populations of the new world were mostly over by the late 1700s.</p>
 <pre class="r"><code># libraries
 library(tidyverse)
 
@@ -391,13 +391,13 @@ pandem_df &lt;- readxl::read_xlsx(&quot;../../static/data/pandemic_data.xlsx&quo
 </tbody>
 </table>
 <hr />
-<p>Next we will add seperate columns for the time period for later analysis.</p>
+<p>Next we will add separate columns for the time period for later analysis.</p>
 <pre class="r"><code># give a start and end date as well
 pandem_df &lt;- pandem_df %&gt;%
   separate(`Time period`, sep = &quot;-&quot;, c(&quot;Start&quot;, &quot;End&quot;), remove = FALSE) %&gt;%
   mutate(Start = as.numeric(Start),
          End = as.numeric(End))</code></pre>
-<p>We will go ahead and make a few color pallettes for later visualization. I’ve also gone ahead and made a caption to attribute the data source.</p>
+<p>We will go ahead and make a few color palettes for later visualization. I’ve also gone ahead and made a caption to attribute the data source.</p>
 <pre class="r"><code>cols &lt;- c(&quot;#999999&quot;, &quot;#999999&quot;, &quot;#999999&quot;, &quot;#999999&quot;,&quot;#c51b7d&quot;, &quot;#999999&quot;,
           &quot;#999999&quot;, &quot;#999999&quot;, &quot;#999999&quot;, &quot;#999999&quot;, &quot;#999999&quot;, &quot;#999999&quot;,
           &quot;#999999&quot;, &quot;#999999&quot;, &quot;#999999&quot;, &quot;#999999&quot;, &quot;#999999&quot;, &quot;#999999&quot;,
@@ -498,7 +498,7 @@ pandem_df %&gt;%
        y = &quot;Total Deaths&quot;, x = &quot; Recent Pandemics&quot;,
        caption = caption1) + coord_flip()</code></pre>
 <p><img src="/blog/2020-03-24-covid-19-and-other-pandemics.en_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
-<p>Finally I thought it would be interesting to examine the pandemics over time. Using <code>geom_rect()</code> we can see both the death toll on the y-axis, as well as the length of each pandemic on the x-axis. It’s interesting to see different disease dynamics this way.I think most notable to me is the HIV/AIDS pandemic. This pandemic looks similar to pre-modern medicine era ones despite occuring recently, and is indicative of the failure of government to act.</p>
+<p>Finally I thought it would be interesting to examine the pandemics over time. Using <code>geom_rect()</code> we can see both the death toll on the y-axis, as well as the length of each pandemic on the x-axis. It’s interesting to see different disease dynamics this way. I think most notable to me is the HIV/AIDS pandemic. This pandemic looks similar to pre-modern medicine era ones despite occurring recently, and is indicative of the failure of government to act.</p>
 <pre class="r"><code># over time with time extent (geom_rect)
 
 pandem_df %&gt;%
@@ -563,7 +563,7 @@ pandem_df %&gt;%
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/@beckborg" title="Twitter">
+                <a href="https://twitter.com/@becksborg" title="Twitter">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>

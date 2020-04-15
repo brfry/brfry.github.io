@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>beck@frecologic.com (Beck Frydenborg)</managingEditor>
     <webMaster>beck@frecologic.com (Beck Frydenborg)</webMaster>
-    <lastBuildDate>Fri, 25 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/water-policy/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Before After Control Impact studies in R</title>
+      <link>/post/before-after-control-impact-studies-in-r/</link>
+      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>/post/before-after-control-impact-studies-in-r/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Decision Making and Distributions</title>

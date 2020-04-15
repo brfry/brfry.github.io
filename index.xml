@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>beck@frecologic.com (Beck Frydenborg)</managingEditor>
     <webMaster>beck@frecologic.com (Beck Frydenborg)</webMaster>
-    <lastBuildDate>Tue, 24 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Before After Control Impact studies in R</title>
+      <link>/post/before-after-control-impact-studies-in-r/</link>
+      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
+      <author>beck@frecologic.com (Beck Frydenborg)</author>
+      <guid>/post/before-after-control-impact-studies-in-r/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>COVID-19 and other Pandemics</title>
@@ -20,7 +29,7 @@
       <guid>/blog/covid-19-and-other-pandemics/</guid>
       <description>I’ve seen this graphic from this blog going around, and while I agree that it is pretty and visually interesting, I find it mostly ineffective for communicating the magnitudes of pandemics over time. Our eyes and brains have a difficult time comparing the volume of spheres compared to a line on a bar chart. Additionally, the image is three dimensional in perspective, which further obfuscates direct comparisons.
 Pandemics
-So since I’m in quarentine, I decided to make a more basic image that allows one to compare magnitudes better.</description>
+So since I’m in quarantine, I decided to make a more basic image that allows one to compare magnitudes better.</description>
     </item>
     
     <item>
